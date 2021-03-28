@@ -6,21 +6,10 @@ from pyqtgraph.parametertree import Parameter, ParameterTree
 import sys
 import cv2 as cv
 import pyqtgraph as pg
-from matplotlib.backends.qt_compat import QtCore, QtWidgets
-from skimage.exposure import rescale_intensity
 from utilitys.widgets import EasyWidget
-import time
-if QtCore.qVersion() >= "5.":
-    from matplotlib.backends.backend_qt5agg import (
-        FigureCanvas, NavigationToolbar2QT as NavigationToolbar)
-else:
-    from matplotlib.backends.backend_qt4agg import (
-        FigureCanvas, NavigationToolbar2QT as NavigationToolbar)
-from matplotlib.figure import Figure
-from skimage import util, morphology as morph
-from skimage import io
-from PyQt5 import QtCore, QtWidgets
-from matplotlib.figure import Figure
+from skimage import morphology as morph
+from skimage import io, data
+from PyQt5 import  QtWidgets
 
 app = pg.mkQApp()
 pg.setConfigOptions(imageAxisOrder='row-major', background='w', foreground='k')
@@ -36,7 +25,7 @@ opts = [
 ]
 param = Parameter.create(name='Options', type='group', children=opts)
 baseUrl = 'https://picsum.photos/'
-img = newImg = None
+img = newImg = data.camera()
 tree = ParameterTree()
 tree.setParameters(param)
 
@@ -44,9 +33,8 @@ def changeImg():
     global img
     useUrl = baseUrl + str(param['image size'])
     img = io.imread(useUrl)
-changeImg()
-param.child('image size').sigValueChanged.connect(changeImg)
-
+# changeImg()
+# param.child('image size').sigValueChanged.connect(changeImg)
 
 def applyOp():
     global newImg
@@ -65,32 +53,6 @@ def applyOp():
         newImg = newImg > newImg.mean()
 param.sigTreeStateChanged.connect(applyOp)
 
-class MainWindow(QtWidgets.QMainWindow):
-    def __init__(self, parent=None):
-        super().__init__(parent)
-
-        self.figure = Figure(figsize=(5, 3))
-        self.canvas = FigureCanvas(self.figure)
-        self.ax = self.figure.subplots()
-        self.ax.set_axis_off()
-        self.updateTime = 0.0
-        self.addToolBar(NavigationToolbar(self.canvas, self))
-
-        self.setCentralWidget(self.canvas)
-        self.figure.tight_layout(pad=2)
-        self.figure.suptitle('Morphological Dilation')
-        param.sigTreeStateChanged.connect(self.updateImage)
-
-    def updateImage(self):
-        global newImg
-        toPlot = rescale_intensity(newImg, out_range='uint8')
-        start = time.perf_counter()
-        self.ax.clear()
-        self.ax.imshow(toPlot)
-        self.canvas.draw()
-        self.updateTime = time.perf_counter() - start
-        self.statusBar().showMessage(UPDATE_FMT.format(lib='Matplotlib', updateTime=self.updateTime))
-
 class MyPlotWidget(QtWidgets.QMainWindow):
 
     def __init__(self):
@@ -101,24 +63,16 @@ class MyPlotWidget(QtWidgets.QMainWindow):
         pw.addItem(self.imgItem)
         pw.getViewBox().invertY()
         pw.getViewBox().setAspectLocked()
-        self.updateTime = 0.0
         self.setCentralWidget(pw)
         pw.plotItem.setTitle('Morphological Dilation')
 
     def updateImage(self):
-        global newImg
-        start = time.perf_counter()
         self.imgItem.setImage(newImg)
-        self.updateTime = time.perf_counter() - start
-        self.statusBar().showMessage(UPDATE_FMT.format(lib='PyQtGraph', updateTime=self.updateTime))
 
 if __name__ == "__main__":
-    w1 = MainWindow()
-    w2 = MyPlotWidget()
+    plotWin = MyPlotWidget()
     lbl = QtWidgets.QLabel()
-    win = EasyWidget.buildMainWin([w1, w2, [tree, lbl]], layout='H')
-    param.sigTreeStateChanged.connect(
-        lambda: lbl.setText(f'PyQtGraph speedup: {w1.updateTime/w2.updateTime:3.2f}x'))
+    win = EasyWidget.buildMainWin([plotWin, tree], layout='H')
     param.sigTreeStateChanged.emit(param, [])
     win.show()
     sys.exit(app.exec_())
