@@ -7,10 +7,26 @@
 \end{figure}}
 
 \newcommand{\makeBasicPlottingFig}{%
-\begin{figure*}[!tbh]
+\begin{figure*}[!htbp]
  \centering
-% \includegraphics[width=\columnwidth]{basicPlotting}
+% \includegraphics[width=\linewidth]{basicPlotting}
  \includegraphics[width=\textwidth]{figures/plotting_example_NN.png}
  \caption{A selection of basic plots from PyQtGraph's suite of examples.}
  \label{fig:basicPlotting}
 \end{figure*}}
+
+\newcommand{\makePtreeExFig}{%
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/pg_ptree_ex}
+\caption{Sample use case of parameter trees for function interaction, where various image processing parameters can be quickly updated. Of note, the displayed image reflects these changes in real-time.}
+ \label{fig:ptreeEx}
+\end{figure}}
+
+\newcommand{\makeMonitoringFig}{%
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/monitoring example.pdf}
+\caption{Monitoring and diagnostic of a (simulated) experiment with intermittent failures. Incoming data at 100 samples/s for two measurement channels is recorded into a rolling 5,000 point buffer and continuously displayed at 30 frames/s. When a failure is observed, it can quickly be brought into focus with simple mouse interactions (click-and-drag and mousewheel zoom) for inspection, or to record accurate time stamps. Afterwards, a single click returns the view to automatic scaling without loss of any incoming data. \color{red}(Comment: I think this design is usable, but I still need to take screenshots at more usable window size.\color{black}}
+ \label{fig:monitoring}
+\end{figure}}
