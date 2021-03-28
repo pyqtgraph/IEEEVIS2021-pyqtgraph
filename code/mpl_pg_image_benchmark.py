@@ -3,6 +3,7 @@
 import random
 import numpy as np
 from pyqtgraph.parametertree import Parameter, ParameterTree
+import sys
 import cv2 as cv
 import pyqtgraph as pg
 from matplotlib.backends.qt_compat import QtCore, QtWidgets
@@ -22,11 +23,13 @@ from PyQt5 import QtCore, QtWidgets
 from matplotlib.figure import Figure
 
 app = pg.mkQApp()
-pg.setConfigOptions(imageAxisOrder='row-major')
+pg.setConfigOptions(imageAxisOrder='row-major', background='w', foreground='k')
+UPDATE_FMT = '{lib} Update time (s): {updateTime:.5f}'
 
 opts = [
-    dict(name='kernel size', type='int', value=3, step=2, limits=[-101, 101]),
+    dict(name='kernel size', type='int', value=0, step=2, limits=[-101, 101]),
     dict(name='binarize', type='bool', value=False),
+    dict(name='grayscale', type='bool', value=False),
     dict(name='strel shape', type='list',
          limits={'disk': morph.disk, 'square': morph.square}),
     dict(name='image size', type='int', value=1000, step=1000, limits=[10,5000])
@@ -51,11 +54,13 @@ def applyOp():
     op = cv.MORPH_DILATE
     if ksize == 0:
         newImg = img.copy()
-        return
-    if ksize < 0:
-        op = cv.MORPH_ERODE
-        ksize = -ksize
-    newImg = cv.morphologyEx(img, op, param['strel shape'](ksize))
+    else:
+        if ksize < 0:
+            op = cv.MORPH_ERODE
+            ksize = -ksize
+        newImg = cv.morphologyEx(img, op, param['strel shape'](ksize))
+    if param['grayscale']:
+        newImg = newImg.mean(2)
     if param['binarize']:
         newImg = newImg > newImg.mean()
 param.sigTreeStateChanged.connect(applyOp)
@@ -71,8 +76,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.updateTime = 0.0
         self.addToolBar(NavigationToolbar(self.canvas, self))
 
-
         self.setCentralWidget(self.canvas)
+        self.figure.tight_layout(pad=2)
         param.sigTreeStateChanged.connect(self.updateImage)
 
     def updateImage(self):
@@ -83,7 +88,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.ax.imshow(toPlot)
         self.canvas.draw()
         self.updateTime = time.perf_counter() - start
-        self.statusBar().showMessage(f'Update time: {self.updateTime}')
+        self.statusBar().showMessage(UPDATE_FMT.format(lib='Matplotlib', updateTime=self.updateTime))
 
 class MyPlotWidget(QtWidgets.QMainWindow):
 
@@ -103,11 +108,9 @@ class MyPlotWidget(QtWidgets.QMainWindow):
         start = time.perf_counter()
         self.imgItem.setImage(newImg)
         self.updateTime = time.perf_counter() - start
-        self.statusBar().showMessage(f'Update time: {self.updateTime}')
+        self.statusBar().showMessage(UPDATE_FMT.format(lib='PyQtGraph', updateTime=self.updateTime))
 
 if __name__ == "__main__":
-    import sys
-
     w1 = MainWindow()
     w2 = MyPlotWidget()
     lbl = QtWidgets.QLabel()
