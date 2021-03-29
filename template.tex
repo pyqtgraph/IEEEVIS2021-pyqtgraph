@@ -75,6 +75,7 @@
 \usepackage{minted}% syntax highlighting
 \usepackage{verbatim}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{placeins} % float barrier
 
 %% declare the category of your paper, only shown in review mode
 \vgtccategory{Research}
@@ -200,11 +201,11 @@ This refers to SciPy, NumPy, and a variety of other libraries that use the NumPy
 The Qt framework is a GUI platform written in C++ that allows the creation of cross-platform applications with a single shared code-base. Comprehensive Python bindings (PyQt) expose the complete Qt API. Here, the specific section of interest is the \texttt{GraphicsView} framework, which provides a surface for managing and interacting with a large number of custom-made 2D graphical items, with support for zooming and rotation\cite{QtGraphicsView}. PyQtGraph is built on this foundation to extend the SciPy stack with performant cross-platform visualization.
 
 \subsection{Implementation}
-\texttt{GraphicsView} renders line segments in a freely scaled coordinate system through \texttt{QPainterPath} objects. The rendering performance of PyQtGraph results from optimized code to create such paths directly from NumPy ndarrays describing sets of $x$ and $y$ coordinates. The core function \texttt{arrayToQPath} uses NumPy's structured array functionality to efficiently create a binary compatible structure that can serve as an input stream to a \texttt{QPainterPath} item (see Appendix \ref{app_arrayToQPath}). This \texttt{QPainterPath} is then drawn to the screen by the Graphics View framework.
+\texttt{GraphicsView} renders line segments in a freely scaled coordinate system through \texttt{QPainterPath} objects. The rendering performance of PyQtGraph results from optimized code to create such paths directly from NumPy ndarrays describing sets of $x$ and $y$ coordinates. The core function \texttt{arrayToQPath} uses NumPy's structured array functionality to efficiently create a binary compatible structure that can serve as an input stream to a \texttt{QPainterPath} item (see Appendix \autoref{app_arrayToQPath}). This \texttt{QPainterPath} is then drawn to the screen by the Graphics View framework.
 
 \section{Capabilities}
 
-All 2d rendering functions that handle large quantities of data are implemented on top of the \texttt{arrayToQPath} conversion. These cover all common plotting requirements. Figure~\ref{fig:basicPlotting} shows a demonstration from PyQtGraph's suite of examples.
+All 2d rendering functions that handle large quantities of data are implemented on top of the \texttt{arrayToQPath} conversion. These cover all common plotting requirements. \autoref{fig:basicPlotting} shows a demonstration from PyQtGraph's suite of examples.
 
 \subsection{Plot Types}
 \makeBasicPlottingFig
@@ -269,7 +270,7 @@ In applications such as image processing, real-time feedback for various algorit
 
 \subsection{Monitoring of real-time data}
 \makeMonitoringFig
-Visualization can provide immediate feedback on measurement results and the operational state of the equipment involved. Figure~\ref{fig:monitoring} shows an application of the opportunities provided by PyQtGraph's interactive facilities in this application. For most applications, no data reduction is necessary to maintain smooth display of a sufficiently large buffer, and no additional code is needed to alternate between monitoring of new data and close inspection of specific events.
+Visualization can provide immediate feedback on measurement results and the operational state of the equipment involved. \autoref{fig:monitoring} shows an application of the opportunities provided by PyQtGraph's interactive facilities in this application. For most applications, no data reduction is necessary to maintain smooth display of a sufficiently large buffer, and no additional code is needed to alternate between monitoring of new data and close inspection of specific events.
 \color{black}
 
 \section{Software development}
@@ -283,78 +284,34 @@ With a growing number of both maintainers and contributors, PyQtGraph is well po
 The authors wish to thank A, B, and C. This work was supported in part by
 a grant from XYZ (\# 12345-67890).}
 
+
+\section{Appendix}
+
+\begin{table*}[bth]
+\inputminted[
+fontsize=\footnotesize, 
+baselinestretch=0.9,
+frame=lines,
+framesep=2mm
+]{python}{figures/arrayToQPath_condensed.py}
+\caption{PyQtGraph source code for the core \texttt{arrayToQPath} function.}
+\label{table:arrayToQPath}
+\end{table*}
+
+\subsection{Implementation of arrayToQPath}
+\label{app_arrayToQPath}
+The function \texttt{arrayToQPath} is at the core of PyQtGraphs performance and is included as \autoref{table:arrayToQPath} to demonstrate the approach. 
+Execution take two \texttt{ndarray} objects of the same length, representing $x$- and $y$-coordinates for for a series of line segments. Interruptions are relatively rare for the main application of fast line plots, and are represented by interspersed Not-a-Number values. A NumPy structured array composed of fields $c$, $x$, and $y$, where $c$ indicates if a connecting line to this point should be drawn. A NumPy \texttt{view} of this array in \texttt{ubyte} format provides direct memory access. The raw memory structure, wrapped in a \texttt{QByteArray} object, can then be used to initialize a \texttt{QPainterPath} object from a \texttt{QDataStream}. All data conversion is handled by NumPy methods that operate more efficiently on the underlying data structure than is possible from Python itself.
+
+
+% Prevents code table from floating to the end of the text. According to submission rules, last two pages are references only.
+\FloatBarrier
+
 %\bibliographystyle{abbrv}
 \bibliographystyle{abbrv-doi}
 %\bibliographystyle{abbrv-doi-narrow}
 %\bibliographystyle{abbrv-doi-hyperref}
 %\bibliographystyle{abbrv-doi-hyperref-narrow}
-
-\section{Appendix}
-\subsection{Implementation of arrayToQPath}
-\label{app_arrayToQPath}
-The function \texttt{arrayToQPath} is at the core of PyQtGraphs performance and is included here in full to demonstrate the approach\ref{table:arrayToQPath}. 
-Execution take two \texttt{ndarray} objects of the same length, representing $x$- and $y$-coordinates for for a series of line segments. Interruptions are relatively rare for the main application of fast line plots, and are represented by interspersed Not-a-Number values. A NumPy structured array composed of fields $c$, $x$, and $y$, where $c$ indicates if a connecting line to this point should be drawn. A NumPy \texttt{view} of this array in \texttt{ubyte} format provides direct memory access. The raw memory structure, wrapped in a \texttt{QByteArray} object, can then be used to initialize a \texttt{QPainterPath} object from a \texttt{QDataStream}. All data conversion is handled by NumPy methods that operate more efficiently on the underlying data structure than is possible from Python itself.
-
-% \begin{verbatim}
-\begin{table*}[pht]
-\begin{minted}{python}
-def arrayToQPath(x, y, connect='all'):
-    """Convert an array of x,y coordinats to QPainterPath as efficiently as possible.
-    The *connect* argument may be 'all', indicating that each point should be
-    connected to the next; 'pairs', indicating that each pair of points
-    should be connected, or an array of int32 values (0 or 1) indicating
-    connections.
-    """
-    path = QtGui.QPainterPath()
-    n = x.shape[0]
-    # create empty array, pad with extra space on either end
-    # see: https://github.com/qt/qtbase/blob/dev/src/gui/painting/qpainterpath.cpp
-    # All values are big endian--pack using struct.pack('>d') or struct.pack('>i')
-    arr = np.empty(n+2, dtype=[('c', '>i4'), ('x', '>f8'), ('y', '>f8')])
-    # write first two integers
-    byteview = arr.view(dtype=np.ubyte)
-    byteview[:16] = 0
-    byteview.data[16:20] = struct.pack('>i', n)
-    # Fill array with vertex values
-    arr[1:-1]['x'] = x
-    arr[1:-1]['y'] = y
-
-    # decide which points are connected by lines
-    if eq(connect, 'all'):
-        arr[1:-1]['c'] = 1
-    elif eq(connect, 'pairs'):
-        arr[1:-1]['c'][::2] = 0
-        arr[1:-1]['c'][1::2] = 1  # connect every 2nd point to every 1st one
-    elif eq(connect, 'finite'):
-        isfinite = np.isfinite(x) & np.isfinite(y)
-        arr[2:]['c'] = isfinite
-    elif isinstance(connect, np.ndarray):
-        arr[2:-1]['c'] = connect[:-1]
-    else:
-        raise Exception('connect argument must be "all", "pairs", "finite", or array')
-    arr[1]['c'] = 0  # the first vertex has no previous vertex to connect
-
-    byteview.data[-20:-16] = struct.pack('>i', 0)  # cStart
-    byteview.data[-16:-12] = struct.pack('>i', 0)  # fillRule (Qt.OddEvenFill)
-
-    # create datastream object and stream into path
-    path.strn = byteview.data[16:-12]  # make sure data doesn't run away
-    try:
-        buf = QtCore.QByteArray.fromRawData(path.strn)
-    except TypeError:
-        buf = QtCore.QByteArray(bytes(path.strn))
-    except AttributeError:
-        # PyQt6 raises AttributeError
-        buf = QtCore.QByteArray(path.strn, path.strn.nbytes)
-    ds = QtCore.QDataStream(buf)
-    ds >> path
-    return path
-\end{minted}
-\caption{PyQtGraph source code for the core \texttt{arrayToQPath} function.}
-\label{table:arrayToQPath}
-\end{table*}
-
-
 
 \bibliography{template}
 \end{document}
