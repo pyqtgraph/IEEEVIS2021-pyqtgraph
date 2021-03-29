@@ -76,14 +76,16 @@ class Generator(object):
         
 class Demo( pg.GraphicsLayoutWidget ):
     def __init__(self):
+        pg.setConfigOptions(antialias=True, background="w", foreground="k")
         super().__init__()
-        self.resize(800,600)
         self.gen = Generator()
         # self.setTitle('Measurement monitor')
         # win = pg.GraphicsLayoutWidget(show=True, title="pyqtgraph example: Linked Views")
-        self.resize(640,480)
-        pen1 = QtGui.QColor('#A64D21') # orange
-        pen2 = QtGui.QColor('#BFB226') # yellow
+        self.resize(350,350)
+        # pen1 = QtGui.QColor('#A64D21') # orange
+        # pen2 = QtGui.QColor('#BFB226') # yellow
+        pen1 = QtGui.QColor('#572491') # orange
+        pen2 = QtGui.QColor('#1c4d91') # yellow
         self.p1 = pg.PlotCurveItem( x=[], y=[], pen=pen1, title="operating condition")
         self.p2 = pg.PlotCurveItem( x=[], y=[], pen=pen2, title="measured signal")
 
