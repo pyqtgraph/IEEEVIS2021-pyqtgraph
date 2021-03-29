@@ -76,7 +76,7 @@ x2 = np.linspace(-100, 100, 1000)
 data2 = np.sin(x2) / x2
 p8 = win.addPlot(title="Region selection")
 p8.plot(data2, pen={"color": "#424242", "width": penWidth})
-lr = pg.LinearRegionItem([400,700], brush="#E8EAF6", pen="#1A237E")
+lr = pg.LinearRegionItem([400,700], brush="#FFF9C4", pen="#1A237E")
 lr.setZValue(-10)
 p8.addItem(lr)
 
