@@ -3,6 +3,9 @@ def arrayToQPath(x, y, connect='all'):
     may be 'all', indicating that each point should be connected to the next; 'pairs', indicating that each
     pair of points should be connected, or an array of int32 values (0 or 1) indicating connections.
     """
+
+    # condensed variant, full code at:
+    # https://github.com/pyqtgraph/pyqtgraph/blob/pyqtgraph-0.12.0/pyqtgraph/functions.py#L1558-L1675
     path = QtGui.QPainterPath()
     n = x.shape[0]
     # create empty array, pad with extra space on either end
@@ -33,14 +36,10 @@ def arrayToQPath(x, y, connect='all'):
 
     byteview.data[-20:-16] = struct.pack('>i', 0)  # cStart
     byteview.data[-16:-12] = struct.pack('>i', 0)  # fillRule (Qt.OddEvenFill)
+    
     # create datastream object and stream into path
     path.strn = byteview.data[16:-12]  # make sure data doesn't run away
-    try:
-        buf = QtCore.QByteArray.fromRawData(path.strn)
-    except TypeError:
-        buf = QtCore.QByteArray(bytes(path.strn))
-    except AttributeError: # PyQt6 raises AttributeError
-        buf = QtCore.QByteArray(path.strn, path.strn.nbytes)
+    buf = QtCore.QByteArray.fromRawData(path.strn)
     ds = QtCore.QDataStream(buf)
     ds >> path
     return path
