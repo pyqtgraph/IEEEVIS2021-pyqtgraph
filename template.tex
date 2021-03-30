@@ -119,7 +119,7 @@ Whereas most scientific visualization tools for Python are oriented around publi
 
 The well-established framework supports line plots, scatter plots, and images, including time-series 3D data represented as 4D arrays, in addition to the basic drawing primitives provided by Qt.
 
-For datasets up to several hundred thousand points, real-time rendering speed is achieved by optimized interaction with the Python bindings of the Qt framework. For enhanced image processing capabilities, PyQtGraph optionally integrates with CUDA. This ensures rendering capabilities are scalable with increasing data demands. Moreover, this improvement is enabled simply by installing the CuPy library, i.e. requiring no in-depth user configurations.
+For datasets up to several hundred thousand points, real-time rendering speed is achieved by optimized interaction with the Python bindings of the Qt framework. For enhanced image processing capabilities, PyQtGraph optionally integrates with CUDA. This ensures rendering capabilities are scalable with increasing data demands. Moreover, this improvement is enabled simply by installing the CuPy\cite{cupy_learningsys2017} library, i.e. requiring no in-depth user configurations.
 
 PyQtGraph provides interactivity not only for panning and scaling, but also through mouse hover, click, drag events and other common native interactions. Since PyQtGraph uses the Qt framework, the user can substitute their own intended application behavior to those events if they feel the library defaults are not appropriate.  This flexibility allows the development of customized and streamlined user interfaces for data manipulation.
 
@@ -150,7 +150,7 @@ PyQtGraph is available through pypi.org (\href{https://pypi.org/project/pyqtgrap
 %% A teaser figure can be included as follows
 \teaser{
   \centering
-  \includegraphics[width=\linewidth]{multiplot}
+  \includegraphics[width=\linewidth]{figures/multiLine.pdf}
   \caption{Screenshot of interactive plot widget with 100 lines each containing 500 points}
   \label{fig:teaser}
 }
@@ -300,8 +300,16 @@ framesep=2mm
 
 \subsection{Implementation of arrayToQPath}
 \label{app_arrayToQPath}
-The function \texttt{arrayToQPath} is at the core of PyQtGraphs performance and is included as \autoref{table:arrayToQPath} to demonstrate the approach. 
-Execution take two \texttt{ndarray} objects of the same length, representing $x$- and $y$-coordinates for for a series of line segments. Interruptions are relatively rare for the main application of fast line plots, and are represented by interspersed Not-a-Number values. A NumPy structured array composed of fields $c$, $x$, and $y$, where $c$ indicates if a connecting line to this point should be drawn. A NumPy \texttt{view} of this array in \texttt{ubyte} format provides direct memory access. The raw memory structure, wrapped in a \texttt{QByteArray} object, can then be used to initialize a \texttt{QPainterPath} object from a \texttt{QDataStream}. All data conversion is handled by NumPy methods that operate more efficiently on the underlying data structure than is possible from Python itself.
+The function \texttt{arrayToQPath} is at the core of PyQtGraph's plotting performance and is included as \autoref{table:arrayToQPath} to demonstrate the approach.
+
+Execution take two \texttt{ndarray} objects of the same length, representing $x$- and $y$-coordinates for a series of line segments. Interruptions are relatively rare for the main application of fast line plots, and are represented by interspersed Not-a-Number values. A NumPy structured array composed of fields $c$, $x$, and $y$, where $c$ indicates if a connecting line to this point should be drawn. A NumPy \texttt{view} of this array in \texttt{ubyte} format provides direct memory access. The raw memory structure, wrapped in a \texttt{QByteArray} object, can then be used to initialize a \texttt{QPainterPath} object from a \texttt{QDataStream}. All data conversion is handled by NumPy methods that operate more efficiently on the underlying data structure than is possible from Python itself.
+
+\subsubsection{Implementation of makeARGB}
+\label{app_makeARGB}
+
+The function \texttt{makeARGB} is at the core of PyQtGraph's image display performance and is included as \autoref{table:makeARGB} to demonstrate the approach.
+
+The segment of memory within a \texttt{QImage} object that will ultimately be displayed on the screen can be accessed and written to as a contiguous, row-major, 3-dimensional NumPy \texttt{ndarray} of unsigned 8-bit integers; i.e. the color and alpha values of each pixel, one row at a time. With this array as the output target, an incoming image array goes through a number of processing steps. All code here is agnostic to the processing substrate (CPU, GPU). Many of the steps are optional, depending on the shape and type of the incoming data, as well as any LUT or rescaling arguments. In a best-case scenario, the incoming data is already in the correct format, and this function may finish itself having only copied data in place. Otherwise, converting the data type, rescaling, reordering the elements and applying a LUT.
 
 
 % Prevents code table from floating to the end of the text. According to submission rules, last two pages are references only.
