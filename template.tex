@@ -304,12 +304,23 @@ The function \texttt{arrayToQPath} is at the core of PyQtGraph's plotting perfor
 
 Execution take two \texttt{ndarray} objects of the same length, representing $x$- and $y$-coordinates for a series of line segments. Interruptions are relatively rare for the main application of fast line plots, and are represented by interspersed Not-a-Number values. A NumPy structured array composed of fields $c$, $x$, and $y$, where $c$ indicates if a connecting line to this point should be drawn. A NumPy \texttt{view} of this array in \texttt{ubyte} format provides direct memory access. The raw memory structure, wrapped in a \texttt{QByteArray} object, can then be used to initialize a \texttt{QPainterPath} object from a \texttt{QDataStream}. All data conversion is handled by NumPy methods that operate more efficiently on the underlying data structure than is possible from Python itself.
 
-\subsubsection{Implementation of makeARGB}
+\begin{table*}[bth]
+\inputminted[
+fontsize=\footnotesize, 
+baselinestretch=0.9,
+frame=lines,
+framesep=2mm
+]{python}{figures/makeARGB_condensed.py}
+\caption{PyQtGraph source code for the core \texttt{makeARGB} function.}
+\label{table:makeARGB}
+\end{table*}
+
+\subsection{Implementation of makeARGB}
 \label{app_makeARGB}
 
 The function \texttt{makeARGB} is at the core of PyQtGraph's image display performance and is included as \autoref{table:makeARGB} to demonstrate the approach.
 
-The segment of memory within a \texttt{QImage} object that will ultimately be displayed on the screen can be accessed and written to as a contiguous, row-major, 3-dimensional NumPy \texttt{ndarray} of unsigned 8-bit integers; i.e. the color and alpha values of each pixel, one row at a time. With this array as the output target, an incoming image array goes through a number of processing steps. All code here is agnostic to the processing substrate (CPU, GPU). Many of the steps are optional, depending on the shape and type of the incoming data, as well as any LUT or rescaling arguments. In a best-case scenario, the incoming data is already in the correct format, and this function may finish itself having only copied data in place. Otherwise, converting the data type, rescaling, reordering the elements and applying a LUT.
+The segment of memory within a \texttt{QImage} object that will ultimately be displayed on the screen can be accessed and written to as a contiguous, row-major, 3-dimensional NumPy \texttt{ndarray} of unsigned 8-bit integers; i.e. the red, green and blue color values and alpha value of each pixel, one row at a time. With this array as the output target, an incoming image array goes through a number of processing steps. All code here is agnostic to the processing substrate (CPU, GPU). Many of the steps are optional, depending on the shape and type of the incoming data, as well as any LUT or rescaling arguments. In a best-case scenario, the incoming data is already in the correct format, and this function may complete having only copied data. Otherwise, converting the data type and reordering the elements will reshape the input to match the required output. The optional rescaling and LUT steps are conducted as needed.
 
 
 % Prevents code table from floating to the end of the text. According to submission rules, last two pages are references only.
