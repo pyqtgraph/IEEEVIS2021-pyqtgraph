@@ -13,8 +13,8 @@ app = pg.mkQApp("MultiPlot Speed Test")
 
 
 colorSet = "viridis"
-nPlots = 100
-nSamples = 500
+nPlots = 30
+nSamples = 5000
 height = 600
 width = 1000
 penWidth = 1
@@ -41,8 +41,8 @@ plot.setYRange(0, nPlots*6)
 plot.setXRange(0, nSamples)
 plot.resize(width, height)
 
-rgn = pg.LinearRegionItem([nSamples/5.,nSamples/3.])
-plot.addItem(rgn)
+# rgn = pg.LinearRegionItem([nSamples/5.,nSamples/3.])
+# plot.addItem(rgn)
 
 data = np.random.normal(size=(nPlots*23,nSamples))
 ptr = 0
@@ -65,7 +65,7 @@ def update():
     else:
         s = np.clip(dt*3., 0, 1)
         fps = fps * (1-s) + (1.0/dt) * s
-    plot.setTitle(f'{nPlots} Lines with {nSamples} Points Each - git pus%0.2f fps' % fps)
+    plot.setTitle(f'{nPlots} Lines with {nSamples} Points Each - %0.2f fps' % fps)
     # print(1_000 / fps)
     #app.processEvents()  ## force complete redraw for every plot
 timer = QtCore.QTimer()
