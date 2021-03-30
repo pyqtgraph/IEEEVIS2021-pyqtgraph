@@ -13,11 +13,11 @@ app = pg.mkQApp("MultiPlot Speed Test")
 
 
 colorSet = "viridis"
-nPlots = 50
+nPlots = 100
 nSamples = 500
 height = 600
 width = 1000
-penWidth = 3
+penWidth = 1
 
 pg.setConfigOptions(background="w", foreground="k")
 
@@ -65,7 +65,7 @@ def update():
     else:
         s = np.clip(dt*3., 0, 1)
         fps = fps * (1-s) + (1.0/dt) * s
-    # plot.setTitle('%0.2f fps' % fps)
+    plot.setTitle(f'{nPlots} Lines with {nSamples} Points Each - %0.2f fps' % fps)
     # print(1_000 / fps)
     #app.processEvents()  ## force complete redraw for every plot
 timer = QtCore.QTimer()
