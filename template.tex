@@ -207,9 +207,7 @@ The Qt framework is a GUI platform written in C++ that allows the creation of cr
 
 \section{Capabilities}
 
-All 2d rendering functions that handle large quantities of data are implemented on top of the \texttt{arrayToQPath} conversion. These cover all common plotting requirements. \autoref{fig:basicPlotting} shows a demonstration from the suite of examples. \color{DarkOrchid} All graphs included in this paper were generated using PyQtGraph's interactive export functions, which can store both bitmaps and vector formats, or provide access to the raw plotted data.
-
-\color{black}
+All 2d rendering functions that handle large quantities of data are implemented on top of the \texttt{arrayToQPath} conversion. These cover all common plotting requirements. \autoref{fig:basicPlotting} shows a demonstration from the suite of examples. All graphs included in this paper were generated using PyQtGraph's interactive export functions, which can store both bitmaps and vector formats, or provide access to the raw plotted data.
 
 \subsection{Plot Types}
 
@@ -222,15 +220,11 @@ Scatter plot items are assigned a default shape, color and size per data set, bu
 %An error bar plot is provided that handles $x$, $y$ coordinates, height, width, and lengths in any direction for lines representing errors.  
 Plots can be extended by both horizontal and vertical error bars and annotated by text labels. Built in routines can also transform the plotted data to provide logarithmic scaling, Fourier transforms, and to show the gradient $dy/dt$ directly over $t$ or as a phase map over $y$.
 
-Bar graphs and images also make use of this framework and can be added to the same PlotItem, although they are more commonly used separately. \color{DarkOrchid} Users can also create \texttt{QPainterPath} objects to add their own graphical elements using the well documented methods of the Qt Graphics View framework. PyQtGraph's suite of examples\cite{pg_examples} illustrates this with some demonstrations.
+Bar graphs and images also make use of this framework and can be added to the same PlotItem, although they are more commonly used separately. Users can also create \texttt{QPainterPath} objects to add their own graphical elements using the well documented methods of the Qt Graphics View framework. PyQtGraph's suite of examples\cite{pg_examples} illustrates this with some demonstrations.
 
-\color{brown}
-Since PyQtGraph uses the Graphics View framework there is nothing limiting users to the plot types that PyQtGraph offers.  End users are able to create their own \texttt{QPainterPath} objects, with brush and pen options that they desire, draw the shapes they want in the position they want.  The Qt documentation is quite extensive on the subject and PyQtGraph provides an example of some custom plots of this nature in the example application.
-\color{black}
 
 \subsubsection{Performance}
 
-\color{DarkOrchid}
 We evaluated the plotting performance for line plots of randomly generated datasets of different length. \autoref{fig:lineSpeed} shows the time taken from setting new data to the completion of the drawing process for 1 to 100 separate curves ranging from 100 to 10 million points. We find that even on common hardware, a curve with 10,000 points can be drawn in less than 10\,ms, and an update rate of 60\,Hz can be maintained up to approximately 30,000 points. Adding more curves introduces additional overhead, such that the same number of 10,000 points, plotted over 100 curves of 100 points each, increases the update time to just below 40\,ms. Nevertheless, the number of points in each of the 100 curves can be increased to close to 3,000 before the update rate falls below 10 frames per second (FPS). At this point, the majority of time is spent processing line segments, and their distribution across different numbers of curves is of secondary importance: A single curve allows for 200,000 points to be displayed at 10 FPS. 
 
 Plotting the results as the update time divided by the overall number of data points further illustrates this. As the total number of points approaches 100,000, where the more or less fixed overhead of the Qt drawing process is no longer significant, the update times converges to approximately 200\,ns per point drawn for both 10 curves and 100 curves. We attribute the increased update time for a single curve to the larger set of data that needs to be handled simultaneously, which may lead to caching issues.
@@ -239,48 +233,36 @@ Although the detailed result will vary with platform, system, and data, we consi
 
 \makeLineBenchmarkFig
 
-\color{brown}
-To evaluate the performance of line line plots, timing information was collected.  The timing information represented the time it took once new data was set to each line, before the change would be rendered to the screen.  For the data in question, down-sampling was not used.
-
-On the machine with the testing, it shows that 60 FPS can be maintained with approximately 30,000 points.  Different platforms will have different behavior, but this should provide a frame of reference for anyone evaluating PyQtGraph for their own purposes. \color{black} 
-
 \subsection{Images and Regions of Interest}
 
-PyQtGraph also provides means to display images and other multi-dimensional data. Handling streams of such data, as in live video, is similarly enabled by efficient NumPy methods that convert the input data into a binary representation that can be used directly by the Qt framework. Various analysis and processing tools interact with the image arrays to implement look-up tables (LUT) for color-mapped display, regions of interest (ROI) or histograms.
+PyQtGraph also provides the means to display images and other multi-dimensional data. Handling streams of such data, as in live video, is similarly enabled by efficient NumPy methods that convert the input data into a binary representation that can be used directly by the Qt framework. Various analysis and processing tools interact with the image arrays, for example regions of interest (ROIs), look-up tables (LUT) for color-mapped display, or histograms.
 
 \subsubsection{Image Views}
 
-The principal object in displaying images, \texttt{ImageItem}, accepts 2-dimensional (interpreted as grayscale) or 3-dimensional (either RGB or RGBA) data of any numeric type. Stored in NumPy arrays, this data can be pre-processed efficiently using any available functions in the SciPy stack. Subtracting a background, for instance, is simply a matter of subtracting the reference frame. This input is then processed by \texttt{ImageItem} and converted into Qt's \texttt{QImage} format for rapid display. \color{DarkOrchid} A range of colormaps are provided to enhance detail perception, and can be altered interactively in levels and colors through a \texttt{HistogramLUTItem}.
+\makeARBBenchmarkFig
 
-\color{brown}
-Customized LUTs can be applied for colormap alterations. An associated \texttt{HistogramLUTItem} object can optionally provide both a useful visual analysis tool and a means of automatically or interactively generating such a LUT.
+\makeMatplotlibComparison
 
-\color{black}
+The principal object in displaying images, \texttt{ImageItem}, accepts 2-dimensional (interpreted as grayscale) or 3-dimensional (either color or color and alpha) data of any numeric type. Stored in NumPy arrays, this data can be pre-processed efficiently using any available functions in the SciPy stack. Subtracting a background, for instance, is simply a matter of subtracting the reference frame. This input is then processed by \texttt{ImageItem} and converted into Qt's \texttt{QImage} format for rapid display. A range of colormaps are provided to enhance detail perception, and can be altered interactively in levels and colors through a \texttt{HistogramLUTItem}.
+
 \subsubsection{ROIs}
 
 A common image analysis task is to define a ROI in a larger original image. This is supported by multiple interactive objects (\texttt{LineROI}, \texttt{CircleROI}, \texttt{PolygonROI}, and others), which provide NumPy slice objects that reference the selected region within the image array. Once extracted, the relevant data can then be further processed. Magnification, live plotting, FFTs and custom analysis are all simple to implement. Multiple ROIs can be bound together in groups to provide background correction or region comparisons both within a single image stream or across many. These ROI objects remain interactive while attached to the image, so that resizing, moving and rotating a ROI can prompt immediate updates of all subsequent plotting and analysis interfaces.
 
 \subsubsection{Performance}
 
-\makeMatplotlibComparison
+Numerous factors play into the final performance of a video stream. Data type conversions, LUTs, scaling, and any custom pre-processing all need to occur for each frame, and the computational effort typically scales with image size. A minimum of 20 FPS is generally required for a usable interactive video stream, although 60 FPS is preferred in many applications. Some share of the image processing is by necessity done in the primary event thread of the Qt application, as Qt requires full access to the memory that contains the data that is to be displayed. Being careful to observe that concern, a multi-threaded approach can improve performance. For example, larger images can be downsampled before processing to reduce the workload of the main thread. The rest of the application should also make sparing use of the main thread for any tasks not strictly tied to updating the user interface.
 
-\color{DarkOrchid}
-Numerous factors play into the final performance of a video stream. Data type conversions, LUTs, scaling, and any custom pre-processing all need to occur for each frame, and the computational effort typically scales with image size. A minimum of 20 FPS is generally required for a usable interactive video stream, although 60 FPS is preferred in many applications. Some share of the image processing is by necessity done in the primary event thread of the Qt application, as this requires full access to the memory that contains the data that is to be displayed.  Larger images can be downsampled before processing to reduce the workload of the main thread. This process lends itself well to a multi-threaded approach.
-
-
-
-\color{brown}
-Numerous factors play into the final performance of a video stream. Data type conversions, LUTs, scaling, and any custom pre-processing will need to happen for each frame, and all this typically scales with image size. To achieve usable interactive video streams, a minimum of 20 frames per second (fps) is generally required, though 60fps is preferred in most applications. Some share of the image processing is done in the primary event thread of the Qt application, as no segment of memory can be displayed that isn't accessible therein. In practice, this means the total complexity of the application can impact the video display performance. This impact can be reduced through copious use of Python threads, a practice already generally recommended for Qt applications. Large images can be downsampled before processing.
-
-\color{black}
 After being configured, \texttt{ImageItem} uses \texttt{makeARGB} to perform its core image processing steps. This function performs the NumPy operations to rescale, apply a LUT and convert the data type to be in proper \texttt{QImage} format. Depending on the configuration and data, rescaling can itself be implemented as a LUT, or modification thereof. In some cases, \texttt{QImage} will have built-in methods to convert the data, and these are used when possible.
 
 \color{DarkOrchid}
 When integrated as a widget in a Qt application (\autoref{fig:mpl}), we typically find \texttt{ImageItem} to display an image 75--150 times faster than the \texttt{FigureCanvas} provided by Matplotlib, a plotting library that emphasizes graphical quality over speed.
 
+
+
 \color{black}
 
-For processing tasks that are too expensive to be run in the same CPU thread, PyQtGraph allows the use of a GPU substrate in one of two ways. \texttt{GLImageItem}, while limited in its interactivity, will defer to OpenGL for rendering. The CuPy library, a drop-in replacement for NumPy, shifts all processing tasks to a CUDA-enabled GPU. This strategy suffers from the cost of copying large segments of memory across the DMA bus, which, while relatively fast, may not make sense for every application. Developers will need to benchmark their particular use case to make the best decision, or allow their users to alter the choice as running conditions change.
+For processing tasks that are too expensive to be run in the same CPU thread, PyQtGraph allows the use of a GPU substrate in one of two ways. \texttt{GLImageItem}, while limited in its interactivity, will defer to OpenGL for rendering. The CuPy library, a drop-in replacement for NumPy, shifts all array processing tasks to a CUDA-enabled GPU. This strategy suffers from the cost of copying large segments of memory across the DMA bus, which, while relatively fast, may not make sense for every application. Developers will need to benchmark their particular use case to make the best decision, or allow their users to alter the choice as running conditions change. As seen in \autoref{fig:makeARGB}, CuPy is more effective for more complex processing.
 
 
 \subsection{Interactivity}
@@ -289,35 +271,51 @@ The Qt framework is event driven, which enables PyQtGraph to provide seamless mo
 
 \subsubsection{Responsiveness at scale}
 
-Recognizing zoom events enables resolution-aware downsampling of the plotted data. Multiple available methods provide different trade-offs of accuracy against performance, and include a "peak" display that precisely captures the minima and maxima of the data, a "mean" over the downsampled interval, and a fast "subsample" that displays only 1 in N datapoints. Automatic downsampling allows responsive display of large datasets, where zooming in automatically reveals more detail.
+Recognizing zoom events enables resolution-aware down-sampling of the plotted data. Multiple available methods provide different trade-offs of accuracy against performance, and include a "peak" display that precisely captures the minima and maxima of the data, a "mean" over the down-sampled interval, and a fast "sub-sample" that displays only 1 in N data points. \color{DarkOrchid} Zooming into the dataset automatically reveals more detail.
 
 \subsubsection{Parameter Trees}\label{sec:paramtrees}
+\color{DarkOrchid}
+Another common requirement for user interaction is a a mechanism to interact with for configuration settings or algorithm parameters. PyQtGraph provides this capability through the \texttt{ParameterTree} object. This take a simple Python dictionary describing the parameters and leverage existing Qt widgets for editing of text, numeric, list-like, and custom data types. Parameters can be grouped, linked, and dynamically instantiated or removed. Callbacks for user actions or value changes allow results to be recalculated, or equipment to be adjusted immediately. The parameter trees are capable of saving and loading their states hierarchically, to easily create persistent configuration files. The accessor paradigm for Parameters mimics a Python dictionary, they can function as a drop-in replacement for settings that are currently programmatically modified in the same manner.
+
+Param
+.
+\color{brown}
 While automated interaction through mouse and keyboard events are critical for seamless user interaction, a mechanism for injecting custom algorithm parameters, configuration settings, and more can be equally important. PyQtGraph provides this capability through Parameter Trees, which allow groupings of arbitrary user-settable data. These leverage existing Qt widgets for text, numeric, list-like, and custom data types while providing callback hooks for when values change or a certain action is triggered. Callbacks can be registered to plot updates, alert messages, data loading, and much more.
+
 
 Parameters can be grouped, linked, dynamically instantiated / removed, and reordered as needed. They are also capable of saving/loading their states hierarchically, easily allowing users to generate persistent configuration files. Moreover, since the accessor paradigm for Parameters mimics a Python dictionary, they can function as a drop-in replacement for settings that are currently programmatically modified in the same manner.
 
 Multiple use cases for these Parameter trees are highlighted in \autoref{sec:examples}. Common to each is the minimal amount of boilerplate additions to facilitate integration and simplicity in setup and customization.
 
-% I can add more about flowchart integration / design paradigms here, but I am unsure if it is filler or relevant to the conversation. The main point would be how parameters bridge the gap between automated and manual workflows, easing the transition from testing to a production application
+\color{black}
 
 \section{Examples}\label{sec:examples}
 % everyone, please put a paragraph/section about a tool you use pyqtgraph for
 
-% \subsection{Human-Updatable Processing Parameters}
 \subsection{Rapid iteration of processing parameters}
-In applications such as image processing, real-time feedback for various algorithm parameters can be critical in reducing the exploration space of viable solutions. For instance, it might be difficult to tell the appropriate kernel size for a morphological operation without testing multiple combinations of image types, parameter values, and more. These factors often make fine-tuning a laborious process. In these cases, Parameter trees can interact with callbacks as described in \autoref{sec:paramtrees} to directly integrate the programmer into the testing space. A simple example of this is shown in \autoref{fig:ptreeEx}. For more complex image processing workflows, an optimal combination of multiple values can be determined on a trial basis, saved to a given configuration file, and loaded on demand depending on input image properties.
+
+\autoref{fig:ptreeEx} shows such a parameter tree in use. 
+In applications such as image processing, immediate feedback for various algorithmic parameters can be critical in reducing the exploration space of viable solutions. For instance, it might be difficult to tell the appropriate kernel size for a morphological operation without testing multiple combinations of image types, parameter values, and more. These factors often make fine-tuning a laborious process. In these cases, Parameter trees can interact with callbacks as described in \autoref{sec:paramtrees} to directly integrate the programmer into the testing space. A simple example of this is shown in . For more complex image processing workflows, an optimal combination of multiple values can be determined on a trial basis, saved to a given configuration file, and loaded on demand depending on input image properties.
 \makePtreeExFig
+
+
+\subsection{Model Prototyping}
+Machine learning is one domain in which users can tune some aspects of the input data, model structure, and output formats. In these cases, live feedback for how these changes affect application accuracy can greatly assist the rapid prototyping process. PyQtGraph can facilitate such developments by converting such specifications into tunable knobs. In turn, these updates can be reflected at application runtime -- drastically decreasing the `dead space` between development and visualization. Such a use case is demonstrated in \autoref{fig:neuralNetFig}.
+% \makeNeuralNetFig
+
 
 \subsection{Monitoring of real-time data}
 \makeMonitoringFig
 Visualization can provide immediate feedback on measurement results and the operational state of the equipment involved. \autoref{fig:monitoring} shows an application of the opportunities provided by PyQtGraph's interactive facilities in this application. For most applications, no data reduction is necessary to maintain smooth display of a sufficiently large buffer, and no additional code is needed to alternate between monitoring of new data and close inspection of specific events.
+
+
 \color{black}
 
 \section{Software development}
 PyQtGraph is released under the open source MIT license. It is known to run on systems ranging from the Raspberry Pi to IBM's s390x architecture. Development is coordinated by volunteer maintainers, with additional code provided by occasional contributors. A continuous integration system asserts that the codebase passes a suite of tests for different combinations of Qt bindings, Python versions and operating systems. PyQtGraph has adopted NEP-29\cite{NEP-29} to establish a support timeline for Python and NumPy versions in line with the rest of the Python community and development occurs in close communication with projects such as ACQ4\cite{10.3389/fninf.2014.00003} and Orange3\cite{JMLR:demsar13a} that constitute a large part of the user base.
 
 \section{Outlook}
-With a growing number of both maintainers and contributors, PyQtGraph is well positioned to take advantage of technological developments. The support of hardware acceleration in recent versions of NumPy has already been used to add CUDA integration to some time-critical code, but there is still plenty of potential for further improvements to performance and capabilities. Multithread architecture patterns can be better applied to internal library objects and functions. These multithread patterns can further be written about more in tutorials and documentation, to encourage performant application design. The growing maturity of the Numba just-in-time compiler \cite{lam2015numba} for Python code provides additional opportunities for acceleration beyond what NumPy's array operations can provide.
+With a growing number of both maintainers and contributors, PyQtGraph is well positioned to take advantage of technological developments. The support of hardware acceleration in recent versions of NumPy has already been used to add CUDA integration to some time-critical code, but there is still plenty of potential for further improvements to performance and capabilities. Multithread architecture patterns can be better applied to internal library objects and functions. These multithread patterns can be written about more in tutorials and documentation, to encourage performant application design. The growing maturity of the Numba just-in-time compiler \cite{lam2015numba} for Python code provides additional opportunities for acceleration beyond what NumPy's array operations can provide.
 
 %% if specified like this the section will be committed in review mode
 \acknowledgments{
@@ -351,7 +349,7 @@ baselinestretch=0.9,
 frame=lines,
 framesep=2mm
 ]{python}{figures/makeARGB_condensed.py}
-\caption{PyQtGraph source code for the core \texttt{makeARGB} function.}
+\caption{PyQtGraph source code for the core \texttt{makeARGB} function. For brevity, edge cases and null checks have been omitted.}
 \label{table:makeARGB}
 \end{table*}
 
@@ -360,18 +358,18 @@ framesep=2mm
 
 The function \texttt{makeARGB} is at the core of PyQtGraph's image display performance and is included as \autoref{table:makeARGB} to demonstrate the approach.
 
-The segment of memory within a \texttt{QImage} object that will ultimately be displayed on the screen can be accessed and written to as a contiguous, row-major, 3-dimensional NumPy \texttt{ndarray} of unsigned 8-bit integers; i.e. the red, green and blue color values and alpha value of each pixel, one row at a time. With this array as the output target, an incoming image array goes through a number of processing steps. All code here is agnostic to the processing substrate (CPU, GPU). Many of the steps are optional, depending on the shape and type of the incoming data, as well as any LUT or rescaling arguments. In a best-case scenario, the incoming data is already in the correct format, and this function may complete having only copied data. Otherwise, converting the data type and reordering the elements will reshape the input to match the required output. The optional rescaling and LUT steps are conducted as needed.
+The segment of memory within a \texttt{QImage} object that will ultimately be displayed on the screen can be accessed and written to as a contiguous, row-major, 3-dimensional NumPy \texttt{ndarray} of unsigned 8-bit integers; i.e. the red, green and blue color values and alpha value of each pixel, one row at a time. With this array as the output target, an incoming image array goes through a number of processing steps. Many of the steps are optional, depending on the shape and type of the incoming data, as well as any LUT or rescaling arguments. The code included here does not include all branches of these considerations, nor the simpler decision trees. In a best-case scenario, the incoming data is already in the correct format, and this function may complete having only copied data. Otherwise, converting the data type and reordering the elements will reshape the input to match the required output. The optional rescaling and LUT steps are conducted as needed.
+
+Two CuPy-related if-statements can be seen, each working around a way in which the library is not completely identical to NumPy. The two seen here specifically are the `take` function missing a "clip" mode, and a misbehavior when using masks as indexes. Otherwise, all code shown is agnostic to the array processing substrate (CPU, GPU).
 
 
 % Prevents code table from floating to the end of the text. According to submission rules, last two pages are references only.
 \FloatBarrier
-
 %\bibliographystyle{abbrv}
 \bibliographystyle{abbrv-doi}
 %\bibliographystyle{abbrv-doi-narrow}
 %\bibliographystyle{abbrv-doi-hyperref}
 %\bibliographystyle{abbrv-doi-hyperref-narrow}
-
 \bibliography{template}
 \end{document}
 
