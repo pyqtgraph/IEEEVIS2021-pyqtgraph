@@ -4,6 +4,8 @@ import pyqtgraph as pg
 import pandas as pd
 from math import log10
 
+from PyQt5.QtGui import QFont
+
 data = pd.read_csv(
     "code/makeARGB_benchmark_results.csv",
     names=["size", "CuPy", "dtype", "levels", "LUT", "time"],
@@ -18,8 +20,14 @@ app = pg.mkQApp("Video Speed Test Results")
 pg.setConfigOptions(antialias=True, background="w", foreground="k")
 
 penWidth = 3
-legendFontSize = "12pt"
-titleFontSize = "14pt"
+legendFontSize = "10pt"
+titleFontSize = "12pt"
+axisFontSize = "10pt"
+fontL = QFont("Arial")
+fontL.setPointSize(14)
+
+fontM = QFont("Arial")
+fontM.setPointSize(12)
 
 gray = "#757575"
 blue = "#41A7DC"
@@ -79,14 +87,32 @@ uint8Data = getSeries(data.loc[data["dtype"] == "uint8"])
 uint16Data = getSeries(data.loc[data["dtype"] == "uint16"])
 floatData = getSeries(data.loc[data["dtype"] == "float"])
 
-floatPlot = win.addPlot()
+floatPlot = win.addPlot(0,0, 1,1)
+floatPlot.setFixedWidth(290)
 
+uint16Plot = win.addPlot(0,2, 1,1)
+uint16Plot.setFixedWidth(270)
 
-floatPlot.setTitle("makeARGB Runtime for float dtype", size=titleFontSize)
-floatPlot.axes["bottom"]["item"].enableAutoSIPrefix(False)
+print( win.ci.layout) 
+win.ci.layout.setColumnFixedWidth(1,1)
 
-floatLegend = floatPlot.addLegend(brush="w", pen="k")
-floatLegend.setLabelTextSize(legendFontSize)
+for plot in (floatPlot, uint16Plot):
+    plot.disableAutoRange()
+    plot.setYRange( 0.1, 200, padding=0 )
+    plot.titleLabel.setFont( fontL )
+    plot.axes["bottom"]["item"].enableAutoSIPrefix(False)
+    for loc in ('left','right','top','bottom'):
+        ax = plot.getAxis(loc)
+        # ax.setFont( fontL )
+        ax.setStyle( tickFont=fontM )
+        if loc in('right', 'top'): ax.setStyle( showValues=False )
+        ax.label.setFont( fontM )
+        ax.show()
+
+floatPlot.setTitle("Float format performance", size=titleFontSize)
+
+floatLegend = floatPlot.addLegend(brush="w", pen="k", verSpacing=-10, offset=(-5,-2), size=(10,10))
+# floatLegend.setLabelTextSize(legendFontSize)
 noLUTyesCUDA = floatPlot.plot(
     x=x,
     y=floatData["yesCUDA_yesLevels_noLUT"],
@@ -100,7 +126,6 @@ noLUTnoCUDA = floatPlot.plot(
     name="no LUT - NumPy only",
     pen=pen_noCUDA_yesLevels_noLUT
 )
-
 
 yesLUTyesCUDA = floatPlot.plot(
     x=x,
@@ -125,17 +150,17 @@ noCUDAFillBetween = pg.FillBetweenItem(noLUTnoCUDA, yesLUTnoCUDA, brush=fillColo
 floatPlot.addItem(noCUDAFillBetween)
 
 floatPlot.showGrid(x=True, y=True)
-floatPlot.setLabel("left", "makeARGB Runtime (ms)")
-floatPlot.setLabel("bottom", "Pixels in Image")
+floatPlot.setLabel("left", "makeARGB run time (ms)")
+floatPlot.setLabel("bottom", "Pixels in image")
 
 
 
-uint16Plot = win.addPlot()
-uint16Plot.setTitle("makeARGB Runtime for uint16 dtype", size=titleFontSize)
+uint16Plot.setTitle("16-bit integer performance", size=titleFontSize)
 uint16Plot.axes["bottom"]["item"].enableAutoSIPrefix(False)
 
-uint16Legend = uint16Plot.addLegend(brush="w", pen="k")
-uint16Legend.setLabelTextSize(legendFontSize)
+uint16Legend = uint16Plot.addLegend(brush="w", pen="k", verSpacing=-10, offset=(-5,-2), size=(10,10))
+
+# uint16Legend.setLabelTextSize(legendFontSize)
 noLUTyesCUDA = uint16Plot.plot(
     x=x,
     y=uint16Data["yesCUDA_yesLevels_noLUT"],
@@ -149,7 +174,6 @@ noLUTnoCUDA = uint16Plot.plot(
     name="no LUT - NumPy only",
     pen=pen_noCUDA_yesLevels_noLUT
 )
-
 
 yesLUTyesCUDA = uint16Plot.plot(
     x=x,
@@ -174,10 +198,12 @@ noCUDAFillBetween = pg.FillBetweenItem(noLUTnoCUDA, yesLUTnoCUDA, brush=fillColo
 uint16Plot.addItem(noCUDAFillBetween)
 
 uint16Plot.showGrid(x=True, y=True)
-uint16Plot.setLabel("left", "makeARGB Runtime (ms)")
-uint16Plot.setLabel("bottom", "Pixels in Image")
+# uint16Plot.setLabel("left", "makeARGB Runtime (ms)")  # do not repeat
+uint16Plot.setLabel("bottom", "Pixels in image")
 
-floatPlot.setYLink(uint16Plot)
+for plot in (floatPlot, uint16Plot):
+    plot.setYRange( np.log10(0.05), np.log10(200), padding=0 )
+    plot.setXRange( np.log10(5e4), np.log10(2e7), padding=0 )
 
 win.resize(1000, 500)
 win.show()
