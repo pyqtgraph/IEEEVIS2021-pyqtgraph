@@ -9,10 +9,16 @@ pg.setConfigOptions(antialias=True, background="w", foreground="k")
 penWidth = 3
 symbolSize = 7
 
-oneLinePenColor = "#b2df8a"
-tenLinePenColor = "#a6cee3"
-hundredLinePenColor = "#DCD0FF"
+# oneLinePenColor = "#b2df8a"
+oneLinePenColor = "#C7472E"
+# tenLinePenColor = "#a6cee3"
+tenLinePenColor = "#B65FD3"
+# hundredLinePenColor = "#DCD0FF"
+hundredLinePenColor = "#41A7DC"
 infiniteLineColor = "#FFB74D"
+
+legendFontSize = "12pt"
+titleFontSize = "14pt"
 
 oneLineSymbol = "o"
 tenLineSymbol = "t1"
@@ -24,15 +30,24 @@ oneLineData = np.array([2.33, 3.49, 9.08, 52.92, 490.53, 5449.26], dtype=float)
 tenLineData = np.array([7.34, 9.96, 31.03, 240.66, 2441.94], dtype=float)
 hundredLineData = np.array([34.544, 51.49, 224.36, 1909.70], dtype=float)
 
-win = pg.GraphicsLayoutWidget()
+oneLineSubSampleData = np.array([2.26, 2.9, 6.81, 43.38, 383.15, 4042.9])
+tenLineSubSampleData = np.array([5.17, 6.76, 26.49, 212.87, 2085.96])
+hundredLineSubSampleData = np.array([23.16, 37.46, 209.97, 1811.96])
 
-pointsPerCurve = win.addPlot()
+win = pg.GraphicsLayoutWidget(size=(800, 600))
+
+pointsPerCurve = win.addPlot(row=0, col=0)
+updateTimePerPoint = win.addPlot(row=0, col=1)
+
 pointsPerCurve.axes["bottom"]["item"].enableAutoSIPrefix(False)
-pointsPerCurve.addLegend()
+# pointsPerCurve.showGrid(x=True, y=True)
+
+legend = pointsPerCurve.addLegend(offset=(5, 5), brush="w", pen="k")
+legend.setLabelTextSize(legendFontSize)
 pointsPerCurve.plot(
     x=x,
     y=oneLineData,
-    name="1 Line",
+    name="1 line",
     pen={
         "color":oneLinePenColor,
         "width": penWidth,
@@ -43,9 +58,20 @@ pointsPerCurve.plot(
     symbol=oneLineSymbol
 )
 pointsPerCurve.plot(
+    x=x,
+    y=oneLineSubSampleData,
+    name="(down-sampled)",
+    pen={
+        "color":oneLinePenColor,
+        "width": penWidth - 1,
+        "style": QtCore.Qt.DashLine
+    },
+)
+
+pointsPerCurve.plot(
     x=x[:-1],
     y=tenLineData,
-    name="10 Lines",
+    name="10 lines",
     pen={
         "color": tenLinePenColor,
         "width": penWidth
@@ -55,10 +81,22 @@ pointsPerCurve.plot(
     symbol=tenLineSymbol,
     symbolPen="k"
 )
+
+pointsPerCurve.plot(
+    x=x[:-1],
+    y=tenLineSubSampleData,
+    name="(down-sampled)",
+    pen={
+        "color":tenLinePenColor,
+        "width": penWidth - 1,
+        "style": QtCore.Qt.DashLine
+    },
+)
+
 pointsPerCurve.plot(
     x=x[:-2],
     y=hundredLineData,
-    name="100 Lines",
+    name="100 lines",
     pen={
         "color": hundredLinePenColor,
         "width": penWidth
@@ -68,6 +106,18 @@ pointsPerCurve.plot(
     symbol=hundredLineSymbol,
     symbolPen="k"
 )
+
+pointsPerCurve.plot(
+    x=x[:-2],
+    y=hundredLineSubSampleData,
+    name="(down-sampled)",
+    pen={
+        "color":hundredLinePenColor,
+        "width": penWidth - 1,
+        "style": QtCore.Qt.DashLine
+    },
+)
+
 pointsPerCurve.setLabel("left", "Time to Update Frame (ms)")
 pointsPerCurve.setLabel("bottom", "Points per Curve")
 pointsPerCurve.addLine(
@@ -99,13 +149,14 @@ pointsPerCurve.addLine(
 
 pointsPerCurve.setLogMode(x=True, y=True)
 
-
-updateTimePerPoint = win.addPlot()
 updateTimePerPoint.axes["bottom"]["item"].enableAutoSIPrefix(False)
+updateTimePerPoint.axes["left"]["item"].enableAutoSIPrefix(False)
 
-updateTimePerPoint.addLegend(offset=(-30, 30))
+legend = updateTimePerPoint.addLegend(offset=(-10, 5), brush="w", pen="k")
+legend.setLabelTextSize(legendFontSize)
 updateTimePerPoint.setLabel("left", "Update Time per Point (µs)")
 updateTimePerPoint.setLabel("bottom", "Total Points")
+updateTimePerPoint.showGrid(x=True, y=True)
 
 totalPointsOneLine = x.copy()
 totalPointsTenLine = x[:-1] * 10
@@ -114,6 +165,10 @@ totalPointsHundredLine = x[:-2] * 100
 perPointUpdateDurationOneLine = 1_000 * oneLineData / totalPointsOneLine
 perPointUpdateDurationsTenLines = 1_000 * tenLineData / totalPointsTenLine
 perPointUpdateDurationsHundredLines = 1_000 * hundredLineData / totalPointsHundredLine
+
+perPointUpdateSubSampleDurationOneLine = 1_000 * oneLineSubSampleData / totalPointsOneLine
+perPointUpdateSubSampleDurationsTenLines = 1_000 * tenLineSubSampleData / totalPointsTenLine
+perPointUpdateSubSampleDurationsHundredLines = 1_000 * hundredLineSubSampleData / totalPointsHundredLine
 
 updateTimePerPoint.addLine(
     y=log10(200 / 1_000),
@@ -141,8 +196,20 @@ updateTimePerPoint.plot(
     symbolPen="k",
     symbolSize=symbolSize,
     symbolBrush=oneLinePenColor,
-    name="1 Line"
+    name="1 line"
 )
+
+updateTimePerPoint.plot(
+    x=totalPointsOneLine,
+    y=perPointUpdateSubSampleDurationOneLine,
+    pen={
+        "color": oneLinePenColor,
+        "width": penWidth - 1,
+        "style": QtCore.Qt.DashLine
+    },
+    name="(down-sampled)",
+)
+
 updateTimePerPoint.plot(
     x=totalPointsTenLine,
     y=perPointUpdateDurationsTenLines,
@@ -154,8 +221,20 @@ updateTimePerPoint.plot(
     symbolPen="k",
     symbolSize=symbolSize,
     symbolBrush=tenLinePenColor,
-    name="10 Lines"
+    name="10 lines"
 )
+
+updateTimePerPoint.plot(
+    x=totalPointsTenLine,
+    y=perPointUpdateSubSampleDurationsTenLines,
+    pen={
+        "color": tenLinePenColor,
+        "width": penWidth - 1,
+        "style": QtCore.Qt.DashLine
+    },
+    name="(down-sampled)",
+)
+
 updateTimePerPoint.plot(
     x=totalPointsHundredLine,
     y=perPointUpdateDurationsHundredLines,
@@ -167,10 +246,27 @@ updateTimePerPoint.plot(
     symbolPen="k",
     symbolSize=symbolSize,
     symbolBrush=hundredLinePenColor,
-    name="100 Lines"
+    name="100 lines"
 )
 
+updateTimePerPoint.plot(
+    x=totalPointsHundredLine,
+    y=perPointUpdateSubSampleDurationsHundredLines,
+    pen={
+        "color": hundredLinePenColor,
+        "width": penWidth - 1,
+        "style": QtCore.Qt.DashLine
+    },
+    name="(down-sampled)",
+)
 updateTimePerPoint.setLogMode(x=True, y=True)
+
+# axesWidths = updateTimePerPoint.axes["left"]["item"].width() + pointsPerCurve.axes["left"]["item"].width()
+# combinedPlotWidth = win.width() - axesWidths
+# firstPlotWidth = combinedPlotWidth // 2 + pointsPerCurve.axes["left"]["item"].width()
+
+win.ci.layout.setColumnFixedWidth(0, 350)
+win.ci.layout.setSpacing(25)
 win.show()
 
 if __name__ == '__main__':
