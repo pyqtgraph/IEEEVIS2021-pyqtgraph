@@ -8,18 +8,19 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.2"
-   viewBox="0 0 800.000000 600.000000"
-   id="svg953"
+   viewBox="0 0 750.000000 550.000000"
+   id="svg1798"
    sodipodi:docname="lineBenchmark.svg"
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
   <metadata
-     id="metadata957">
+     id="metadata1802">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>pyqtgraph SVG export</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -32,23 +33,23 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1161"
-     inkscape:window-height="892"
-     id="namedview955"
+     inkscape:window-width="732"
+     inkscape:window-height="480"
+     id="namedview1800"
      showgrid="false"
-     inkscape:zoom="1.0475"
-     inkscape:cx="400"
-     inkscape:cy="300"
+     inkscape:zoom="1.3363636"
+     inkscape:cx="370.5102"
+     inkscape:cy="430.64626"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg953" />
+     inkscape:current-layer="svg1798" />
   <title
-     id="title10">pyqtgraph SVG export</title>
+     id="title959">pyqtgraph SVG export</title>
   <desc
-     id="desc12">Generated with Qt and pyqtgraph</desc>
+     id="desc961">Generated with Qt and pyqtgraph</desc>
   <style
-     id="style14">
+     id="style963">
     image {
         image-rendering: crisp-edges;
         image-rendering: -moz-crisp-edges;
@@ -56,7 +57,7 @@
     }
 </style>
   <defs
-     id="defs18" />
+     id="defs967" />
   <g
      id="GraphicsScene_1">
     <g
@@ -94,40 +95,12 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g22">
+             id="g971">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.3094,547.8 361.00039999999996,547.8"
-               id="polyline20" />
-          </g>
-          <g
-             fill="none"
-             stroke="#000000"
-             stroke-opacity="1"
-             stroke-width="1"
-             stroke-linecap="square"
-             stroke-linejoin="bevel"
-             font-family=".AppleSystemUIFont"
-             font-size="13"
-             font-weight="400"
-             font-style="normal"
-             id="g30">
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="73.3765,547.8 73.3765,542.8"
-               id="polyline24" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="181.5994,547.8 181.5994,542.8"
-               id="polyline26" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="289.8214,547.8 289.8214,542.8"
-               id="polyline28" />
+               points="55.3094,497.8 336.00039999999996,497.8"
+               id="polyline969" />
           </g>
           <g
              fill="none"
@@ -140,22 +113,22 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g38">
+             id="g979">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="127.4878,547.8 127.4878,544.4666699999999"
-               id="polyline32" />
+               points="72.64359999999999,497.8 72.64359999999999,494.46667"
+               id="polyline973" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="235.7104,547.8 235.7104,544.4666699999999"
-               id="polyline34" />
+               points="171.4524,497.8 171.4524,494.46667"
+               id="polyline975" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="343.9334,547.8 343.9334,544.4666699999999"
-               id="polyline36" />
+               points="270.2614,497.8 270.2614,494.46667"
+               id="polyline977" />
           </g>
           <g
              fill="none"
@@ -168,267 +141,22 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g144">
+             id="g987">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="57.08734,547.8 57.08734,545.3"
-               id="polyline40" />
+               points="122.04809999999999,497.8 122.04809999999999,495.3"
+               id="polyline981" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="61.371939999999995,547.8 61.371939999999995,545.3"
-               id="polyline42" />
+               points="220.85739999999998,497.8 220.85739999999998,495.3"
+               id="polyline983" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="64.99452,547.8 64.99452,545.3"
-               id="polyline44" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="68.1325,547.8 68.1325,545.3"
-               id="polyline46" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="70.9005,547.8 70.9005,545.3"
-               id="polyline48" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="73.3765,547.8 73.3765,545.3"
-               id="polyline50" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="89.6656,547.8 89.6656,545.3"
-               id="polyline52" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="99.19409999999999,547.8 99.19409999999999,545.3"
-               id="polyline54" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="105.9547,547.8 105.9547,545.3"
-               id="polyline56" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="111.1986,547.8 111.1986,545.3"
-               id="polyline58" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="115.4832,547.8 115.4832,545.3"
-               id="polyline60" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="119.10579999999999,547.8 119.10579999999999,545.3"
-               id="polyline62" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="122.2438,547.8 122.2438,545.3"
-               id="polyline64" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="125.0118,547.8 125.0118,545.3"
-               id="polyline66" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="127.4878,547.8 127.4878,545.3"
-               id="polyline68" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="143.7769,547.8 143.7769,545.3"
-               id="polyline70" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="153.3054,547.8 153.3054,545.3"
-               id="polyline72" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="160.0664,547.8 160.0664,545.3"
-               id="polyline74" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="165.31040000000002,547.8 165.31040000000002,545.3"
-               id="polyline76" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="169.5944,547.8 169.5944,545.3"
-               id="polyline78" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="173.2174,547.8 173.2174,545.3"
-               id="polyline80" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="176.3554,547.8 176.3554,545.3"
-               id="polyline82" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="179.1234,547.8 179.1234,545.3"
-               id="polyline84" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="181.5994,547.8 181.5994,545.3"
-               id="polyline86" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="197.8884,547.8 197.8884,545.3"
-               id="polyline88" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="207.4164,547.8 207.4164,545.3"
-               id="polyline90" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="214.17739999999998,547.8 214.17739999999998,545.3"
-               id="polyline92" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="219.4214,547.8 219.4214,545.3"
-               id="polyline94" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="223.7054,547.8 223.7054,545.3"
-               id="polyline96" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="227.3284,547.8 227.3284,545.3"
-               id="polyline98" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="230.46640000000002,547.8 230.46640000000002,545.3"
-               id="polyline100" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="233.2344,547.8 233.2344,545.3"
-               id="polyline102" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="235.7104,547.8 235.7104,545.3"
-               id="polyline104" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="251.99939999999998,547.8 251.99939999999998,545.3"
-               id="polyline106" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="261.5284,547.8 261.5284,545.3"
-               id="polyline108" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="268.2884,547.8 268.2884,545.3"
-               id="polyline110" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="273.5324,547.8 273.5324,545.3"
-               id="polyline112" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="277.8174,547.8 277.8174,545.3"
-               id="polyline114" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="281.4394,547.8 281.4394,545.3"
-               id="polyline116" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="284.5774,547.8 284.5774,545.3"
-               id="polyline118" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="287.3454,547.8 287.3454,545.3"
-               id="polyline120" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="289.8214,547.8 289.8214,545.3"
-               id="polyline122" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="306.11039999999997,547.8 306.11039999999997,545.3"
-               id="polyline124" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="315.63939999999997,547.8 315.63939999999997,545.3"
-               id="polyline126" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="322.4004,547.8 322.4004,545.3"
-               id="polyline128" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="327.6434,547.8 327.6434,545.3"
-               id="polyline130" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="331.9284,547.8 331.9284,545.3"
-               id="polyline132" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="335.5514,547.8 335.5514,545.3"
-               id="polyline134" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="338.6894,547.8 338.6894,545.3"
-               id="polyline136" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="341.4574,547.8 341.4574,545.3"
-               id="polyline138" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="343.9334,547.8 343.9334,545.3"
-               id="polyline140" />
-            <polyline
-               fill="none"
-               vector-effect="non-scaling-stroke"
-               points="360.2224,547.8 360.2224,545.3"
-               id="polyline142" />
+               points="319.6654,497.8 319.6654,495.3"
+               id="polyline985" />
           </g>
           <g
              fill="none"
@@ -437,84 +165,84 @@
              stroke-width="1"
              stroke-linecap="square"
              stroke-linejoin="bevel"
-             transform="matrix(1,0,0,1,55.8094,547.8)"
+             transform="matrix(1,0,0,1,55.8094,497.8)"
              font-family=".AppleSystemUIFont"
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g158">
+             id="g1001">
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="8.59375"
+               x="7.85938"
                y="14.125"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text146">10²</text>
+               id="text989">10²</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="116.672"
+               x="106.531"
                y="14.125"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text148">10⁴</text>
+               id="text991">10⁴</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="224.922"
+               x="205.359"
                y="14.125"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text150">10⁶</text>
+               id="text993">10⁶</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="62.6094"
+               x="57.1719"
                y="14.125"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text152">10³</text>
+               id="text995">10³</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="170.875"
+               x="156.016"
                y="14.125"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text154">10⁵</text>
+               id="text997">10⁵</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="279.281"
+               x="255.016"
                y="14.125"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text156">10⁷</text>
+               id="text999">10⁷</text>
           </g>
           <g
              fill="none"
@@ -531,12 +259,12 @@
                stroke-width="1"
                stroke-linecap="square"
                stroke-linejoin="bevel"
-               transform="matrix(1,0,0,1,150.309,567.8)"
+               transform="matrix(1,0,0,1,138.309,517.8)"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="g162">
+               id="g1005">
               <text
                  fill="#000000"
                  fill-opacity="1"
@@ -548,7 +276,7 @@
                  font-size="13"
                  font-weight="400"
                  font-style="normal"
-                 id="text160">Points per Curve </text>
+                 id="text1003">Points per Curve </text>
             </g>
           </g>
         </g>
@@ -571,12 +299,12 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g168">
+             id="g1011">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.3094,13.0 55.3094,547.8"
-               id="polyline166" />
+               points="55.3094,13.0 55.3094,497.8"
+               id="polyline1009" />
           </g>
           <g
              fill="none"
@@ -589,12 +317,12 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g172">
+             id="g1015">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,287.262 60.8094,287.262"
-               id="polyline170" />
+               points="55.8094,261.621 60.8094,261.621"
+               id="polyline1013" />
           </g>
           <g
              fill="none"
@@ -607,17 +335,17 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g178">
+             id="g1021">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,431.84 59.1427,431.84"
-               id="polyline174" />
+               points="55.8094,392.071 59.1427,392.071"
+               id="polyline1017" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,142.683 59.1427,142.683"
-               id="polyline176" />
+               points="55.8094,131.171 59.1427,131.171"
+               id="polyline1019" />
           </g>
           <g
              fill="none"
@@ -630,172 +358,177 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g246">
+             id="g1091">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,532.896 58.3094,532.896"
-               id="polyline180" />
+               points="55.8094,483.252 58.3094,483.252"
+               id="polyline1023" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,507.437 58.3094,507.437"
-               id="polyline182" />
+               points="55.8094,460.281 58.3094,460.281"
+               id="polyline1025" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,489.373 58.3094,489.373"
-               id="polyline184" />
+               points="55.8094,443.983 58.3094,443.983"
+               id="polyline1027" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,475.362 58.3094,475.362"
-               id="polyline186" />
+               points="55.8094,431.341 58.3094,431.341"
+               id="polyline1029" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,463.914 58.3094,463.914"
-               id="polyline188" />
+               points="55.8094,421.012 58.3094,421.012"
+               id="polyline1031" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,454.235 58.3094,454.235"
-               id="polyline190" />
+               points="55.8094,412.278 58.3094,412.278"
+               id="polyline1033" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,445.851 58.3094,445.851"
-               id="polyline192" />
+               points="55.8094,404.713 58.3094,404.713"
+               id="polyline1035" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,438.455 58.3094,438.455"
-               id="polyline194" />
+               points="55.8094,398.04 58.3094,398.04"
+               id="polyline1037" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,431.84 58.3094,431.84"
-               id="polyline196" />
+               points="55.8094,392.071 58.3094,392.071"
+               id="polyline1039" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,388.317 58.3094,388.317"
-               id="polyline198" />
+               points="55.8094,352.802 58.3094,352.802"
+               id="polyline1041" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,362.859 58.3094,362.859"
-               id="polyline200" />
+               points="55.8094,329.831 58.3094,329.831"
+               id="polyline1043" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,344.795 58.3094,344.795"
-               id="polyline202" />
+               points="55.8094,313.533 58.3094,313.533"
+               id="polyline1045" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,330.784 58.3094,330.784"
-               id="polyline204" />
+               points="55.8094,300.891 58.3094,300.891"
+               id="polyline1047" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,319.336 58.3094,319.336"
-               id="polyline206" />
+               points="55.8094,290.561 58.3094,290.561"
+               id="polyline1049" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,309.657 58.3094,309.657"
-               id="polyline208" />
+               points="55.8094,281.828 58.3094,281.828"
+               id="polyline1051" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,301.273 58.3094,301.273"
-               id="polyline210" />
+               points="55.8094,274.263 58.3094,274.263"
+               id="polyline1053" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,293.877 58.3094,293.877"
-               id="polyline212" />
+               points="55.8094,267.59000000000003 58.3094,267.59000000000003"
+               id="polyline1055" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,287.262 58.3094,287.262"
-               id="polyline214" />
+               points="55.8094,261.621 58.3094,261.621"
+               id="polyline1057" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,243.739 58.3094,243.739"
-               id="polyline216" />
+               points="55.8094,222.352 58.3094,222.352"
+               id="polyline1059" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,218.28 58.3094,218.28"
-               id="polyline218" />
+               points="55.8094,199.381 58.3094,199.381"
+               id="polyline1061" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,200.217 58.3094,200.217"
-               id="polyline220" />
+               points="55.8094,183.082 58.3094,183.082"
+               id="polyline1063" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,186.206 58.3094,186.206"
-               id="polyline222" />
+               points="55.8094,170.44 58.3094,170.44"
+               id="polyline1065" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,174.758 58.3094,174.758"
-               id="polyline224" />
+               points="55.8094,160.111 58.3094,160.111"
+               id="polyline1067" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,165.079 58.3094,165.079"
-               id="polyline226" />
+               points="55.8094,151.378 58.3094,151.378"
+               id="polyline1069" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,156.694 58.3094,156.694"
-               id="polyline228" />
+               points="55.8094,143.813 58.3094,143.813"
+               id="polyline1071" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,149.299 58.3094,149.299"
-               id="polyline230" />
+               points="55.8094,137.14 58.3094,137.14"
+               id="polyline1073" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,142.683 58.3094,142.683"
-               id="polyline232" />
+               points="55.8094,131.171 58.3094,131.171"
+               id="polyline1075" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,99.1609 58.3094,99.1609"
-               id="polyline234" />
+               points="55.8094,91.9015 58.3094,91.9015"
+               id="polyline1077" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,73.7019 58.3094,73.7019"
-               id="polyline236" />
+               points="55.8094,68.93039999999999 58.3094,68.93039999999999"
+               id="polyline1079" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,55.6385 58.3094,55.6385"
-               id="polyline238" />
+               points="55.8094,52.6321 58.3094,52.6321"
+               id="polyline1081" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,41.6274 58.3094,41.6274"
-               id="polyline240" />
+               points="55.8094,39.9902 58.3094,39.9902"
+               id="polyline1083" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,30.1795 58.3094,30.1795"
-               id="polyline242" />
+               points="55.8094,29.661 58.3094,29.661"
+               id="polyline1085" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="55.8094,20.50043 58.3094,20.50043"
-               id="polyline244" />
+               points="55.8094,20.92773 58.3094,20.92773"
+               id="polyline1087" />
+            <polyline
+               fill="none"
+               vector-effect="non-scaling-stroke"
+               points="55.8094,13.362673000000001 58.3094,13.362673000000001"
+               id="polyline1089" />
           </g>
           <g
              fill="none"
@@ -809,43 +542,43 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g254">
+             id="g1099">
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
                x="19.3594"
-               y="278.734"
+               y="253.094"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text248">10²</text>
+               id="text1093">10²</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
                x="20.3906"
-               y="423.313"
+               y="383.547"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text250">10¹</text>
+               id="text1095">10¹</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
                x="19.1875"
-               y="134.156"
+               y="122.641"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text252">10³</text>
+               id="text1097">10³</text>
           </g>
           <g
              fill="none"
@@ -862,12 +595,12 @@
                stroke-width="1"
                stroke-linecap="square"
                stroke-linejoin="bevel"
-               transform="matrix(0,-1,1,0,8,369)"
+               transform="matrix(0,-1,1,0,8,344)"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="g258">
+               id="g1103">
               <text
                  fill="#000000"
                  fill-opacity="1"
@@ -879,7 +612,7 @@
                  font-size="13"
                  font-weight="400"
                  font-style="normal"
-                 id="text256">Time to Update Frame (ms) </text>
+                 id="text1101">Time to Update Frame (ms) </text>
             </g>
           </g>
         </g>
@@ -898,25 +631,25 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g264">
+             id="g1109">
             <path
                vector-effect="non-scaling-stroke"
                fill-rule="evenodd"
-               d="M55.3094,13.0 L361.00039999999996,13.0 L361.00039999999996,547.8 L55.3094,547.8 L55.3094,13.0 "
-               id="path262" />
+               d="M55.3094,13.0 L336.00039999999996,13.0 L336.00039999999996,497.8 L55.3094,497.8 L55.3094,13.0 "
+               id="path1107" />
           </g>
           <clipPath
              id="ViewBox_1_clip">
             <path
                vector-effect="none"
                fill-rule="evenodd"
-               d="M55.3094,13.0 L361.0,13.0 L361.0,547.8 L55.3094,547.8 L55.3094,13.0 "
+               d="M55.3094,13.0 L336.0,13.0 L336.0,497.8 L55.3094,497.8 L55.3094,13.0 "
                stroke-width="1.0"
-               id="path266" />
+               id="path1111" />
           </clipPath>
           <g
              clip-path="url(#ViewBox_1_clip)"
-             id="g479">
+             id="g1324">
             <g
                fill="none"
                stroke="black"
@@ -946,12 +679,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g271">
+                     id="g1116">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M72.87639999999999,523.306404232 L126.98769999999999,497.93744715 L181.099,437.899842292 L235.21030000000002,327.22046764000004 L289.3216,187.40631274000003 L343.43289999999996,36.22543547999999 "
-                       id="path269" />
+                       d="M72.1435,474.6004098000001 L121.5479,451.71047875000005 L170.9523,397.53968130000004 L220.35670000000002,297.67577100000005 L269.7611,171.5240985000001 L319.1655,35.11644700000005 "
+                       id="path1114" />
                   </g>
                 </g>
                 <g
@@ -974,12 +707,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g276">
+                     id="g1121">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M76.3764,523.306 C76.3764,525.238994 74.809394,526.806 72.8764,526.806 C70.94340600000001,526.806 69.3764,525.238994 69.3764,523.306 C69.3764,521.373006 70.94340600000001,519.806 72.8764,519.806 C74.809394,519.806 76.3764,521.373006 76.3764,523.306 "
-                       id="path274" />
+                       d="M75.6436,474.6 C75.6436,476.53299400000003 74.076594,478.1 72.1436,478.1 C70.21060600000001,478.1 68.6436,476.53299400000003 68.6436,474.6 C68.6436,472.667006 70.21060600000001,471.1 72.1436,471.1 C74.076594,471.1 75.6436,472.667006 75.6436,474.6 "
+                       id="path1119" />
                   </g>
                   <g
                      fill="#c7472e"
@@ -993,12 +726,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g280">
+                     id="g1125">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M130.488,497.937 C130.488,499.869994 128.920994,501.437 126.988,501.437 C125.055006,501.437 123.488,499.869994 123.488,497.937 C123.488,496.004006 125.055006,494.437 126.988,494.437 C128.920994,494.437 130.488,496.004006 130.488,497.937 "
-                       id="path278" />
+                       d="M125.048,451.71 C125.048,453.642994 123.480994,455.21 121.548,455.21 C119.61500600000001,455.21 118.048,453.642994 118.048,451.71 C118.048,449.777006 119.61500600000001,448.21 121.548,448.21 C123.480994,448.21 125.048,449.777006 125.048,451.71 "
+                       id="path1123" />
                   </g>
                   <g
                      fill="#c7472e"
@@ -1012,12 +745,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g284">
+                     id="g1129">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M184.599,437.9 C184.599,439.832994 183.031994,441.4 181.099,441.4 C179.16600599999998,441.4 177.599,439.832994 177.599,437.9 C177.599,435.96700599999997 179.16600599999998,434.4 181.099,434.4 C183.031994,434.4 184.599,435.96700599999997 184.599,437.9 "
-                       id="path282" />
+                       d="M174.452,397.539 C174.452,399.471994 172.884994,401.039 170.952,401.039 C169.019006,401.039 167.452,399.471994 167.452,397.539 C167.452,395.606006 169.019006,394.039 170.952,394.039 C172.884994,394.039 174.452,395.606006 174.452,397.539 "
+                       id="path1127" />
                   </g>
                   <g
                      fill="#c7472e"
@@ -1031,12 +764,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g288">
+                     id="g1133">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M238.71,327.22 C238.71,329.15299400000004 237.14299400000002,330.72 235.21,330.72 C233.277006,330.72 231.71,329.15299400000004 231.71,327.22 C231.71,325.287006 233.277006,323.72 235.21,323.72 C237.14299400000002,323.72 238.71,325.287006 238.71,327.22 "
-                       id="path286" />
+                       d="M223.857,297.675 C223.857,299.607994 222.289994,301.175 220.357,301.175 C218.424006,301.175 216.857,299.607994 216.857,297.675 C216.857,295.742006 218.424006,294.175 220.357,294.175 C222.289994,294.175 223.857,295.742006 223.857,297.675 "
+                       id="path1131" />
                   </g>
                   <g
                      fill="#c7472e"
@@ -1050,12 +783,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g292">
+                     id="g1137">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M292.822,187.406 C292.822,189.338994 291.254994,190.906 289.322,190.906 C287.389006,190.906 285.822,189.338994 285.822,187.406 C285.822,185.473006 287.389006,183.906 289.322,183.906 C291.254994,183.906 292.822,185.473006 292.822,187.406 "
-                       id="path290" />
+                       d="M273.261,171.524 C273.261,173.456994 271.69399400000003,175.024 269.761,175.024 C267.828006,175.024 266.261,173.456994 266.261,171.524 C266.261,169.591006 267.828006,168.024 269.761,168.024 C271.69399400000003,168.024 273.261,169.591006 273.261,171.524 "
+                       id="path1135" />
                   </g>
                   <g
                      fill="#c7472e"
@@ -1069,12 +802,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g296">
+                     id="g1141">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M346.933,36.2248 C346.933,38.157794 345.365994,39.7248 343.433,39.7248 C341.500006,39.7248 339.933,38.157794 339.933,36.2248 C339.933,34.291806 341.500006,32.7248 343.433,32.7248 C345.365994,32.7248 346.933,34.291806 346.933,36.2248 "
-                       id="path294" />
+                       d="M322.666,35.1156 C322.666,37.048594 321.098994,38.6156 319.166,38.6156 C317.233006,38.6156 315.666,37.048594 315.666,35.1156 C315.666,33.182606 317.233006,31.6156 319.166,31.6156 C321.098994,31.6156 322.666,33.182606 322.666,35.1156 "
+                       id="path1139" />
                   </g>
                 </g>
               </g>
@@ -1101,12 +834,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g302">
+                     id="g1147">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M72.87639999999999,525.221773576 L126.98769999999999,509.565421956 L181.099,455.963273034 L235.21030000000002,339.70188638 L289.3216,202.91953214 L343.43289999999996,54.96997318000001 "
-                       id="path300" />
+                       d="M72.1435,476.32861140000006 L121.5479,462.20218090000003 L170.9523,413.8379738500001 L220.35670000000002,308.93751950000006 L269.7611,185.52138350000007 L319.1655,52.02928950000012 "
+                       id="path1145" />
                   </g>
                 </g>
               </g>
@@ -1131,12 +864,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g308">
+                     id="g1153">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M72.87639999999999,451.257403712 L126.98769999999999,432.091710298 L181.099,360.73943116 L235.21030000000002,232.11995079999997 L289.3216,86.62677206000001 "
-                       id="path306" />
+                       d="M72.1435,409.59195680000005 L121.5479,392.29911345000005 L170.9523,327.919299 L220.35670000000002,211.86837000000003 L269.7611,80.59262150000012 "
+                       id="path1151" />
                   </g>
                 </g>
                 <g
@@ -1159,12 +892,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g313">
+                     id="g1158">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M69.3764,454.757 L72.8764,447.757 L76.3764,454.757 L69.3764,454.757 "
-                       id="path311" />
+                       d="M68.6436,413.091 L72.1436,406.091 L75.6436,413.091 L68.6436,413.091 "
+                       id="path1156" />
                   </g>
                   <g
                      fill="#b65fd3"
@@ -1178,12 +911,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g317">
+                     id="g1162">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M123.488,435.592 L126.988,428.592 L130.488,435.592 L123.488,435.592 "
-                       id="path315" />
+                       d="M118.048,395.798 L121.548,388.798 L125.048,395.798 L118.048,395.798 "
+                       id="path1160" />
                   </g>
                   <g
                      fill="#b65fd3"
@@ -1197,12 +930,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g321">
+                     id="g1166">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M177.599,364.239 L181.099,357.239 L184.599,364.239 L177.599,364.239 "
-                       id="path319" />
+                       d="M167.452,331.418 L170.952,324.418 L174.452,331.418 L167.452,331.418 "
+                       id="path1164" />
                   </g>
                   <g
                      fill="#b65fd3"
@@ -1216,12 +949,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g325">
+                     id="g1170">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M231.71,235.619 L235.21,228.619 L238.71,235.619 L231.71,235.619 "
-                       id="path323" />
+                       d="M216.857,215.367 L220.357,208.367 L223.857,215.367 L216.857,215.367 "
+                       id="path1168" />
                   </g>
                   <g
                      fill="#b65fd3"
@@ -1235,12 +968,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g329">
+                     id="g1174">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M285.822,90.1252 L289.322,83.1252 L292.822,90.1252 L285.822,90.1252 "
-                       id="path327" />
+                       d="M266.261,84.0908 L269.761,77.0908 L273.261,84.0908 L266.261,84.0908 "
+                       id="path1172" />
                   </g>
                 </g>
               </g>
@@ -1267,12 +1000,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g335">
+                     id="g1180">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M72.87639999999999,473.262898202 L126.98769999999999,456.425922634 L181.099,370.67193976 L235.21030000000002,239.82451241999996 L289.3216,96.51879881999997 "
-                       id="path333" />
+                       d="M72.1435,429.4470990500001 L121.5479,414.2554138500001 L170.9523,336.8812140000001 L220.35670000000002,218.82005050000004 L269.7611,89.51801050000006 "
+                       id="path1178" />
                   </g>
                 </g>
               </g>
@@ -1297,12 +1030,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g341">
+                     id="g1186">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M72.87639999999999,354.00354214000004 L126.98769999999999,328.94094584000004 L181.099,236.5223509 L235.21030000000002,102.06191934000003 "
-                       id="path339" />
+                       d="M72.1435,321.84163350000006 L121.5479,299.2281260000001 L170.9523,215.84057250000006 L220.35670000000002,94.51946350000009 "
+                       id="path1184" />
                   </g>
                 </g>
                 <g
@@ -1325,12 +1058,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g346">
+                     id="g1191">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M69.3764,350.503 L76.3764,350.503 L76.3764,357.503 L69.3764,357.503 L69.3764,350.503 "
-                       id="path344" />
+                       d="M68.6436,318.341 L75.6436,318.341 L75.6436,325.341 L68.6436,325.341 L68.6436,318.341 "
+                       id="path1189" />
                   </g>
                   <g
                      fill="#41a7dc"
@@ -1344,12 +1077,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g350">
+                     id="g1195">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M123.488,325.44 L130.488,325.44 L130.488,332.44 L123.488,332.44 L123.488,325.44 "
-                       id="path348" />
+                       d="M118.048,295.727 L125.048,295.727 L125.048,302.727 L118.048,302.727 L118.048,295.727 "
+                       id="path1193" />
                   </g>
                   <g
                      fill="#41a7dc"
@@ -1363,12 +1096,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g354">
+                     id="g1199">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M177.599,233.022 L184.599,233.022 L184.599,240.022 L177.599,240.022 L177.599,233.022 "
-                       id="path352" />
+                       d="M167.452,212.34 L174.452,212.34 L174.452,219.34 L167.452,219.34 L167.452,212.34 "
+                       id="path1197" />
                   </g>
                   <g
                      fill="#41a7dc"
@@ -1382,12 +1115,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g358">
+                     id="g1203">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M231.71,98.562 L238.71,98.562 L238.71,105.562 L231.71,105.562 L231.71,98.562 "
-                       id="path356" />
+                       d="M216.857,91.019 L223.857,91.019 L223.857,98.019 L216.857,98.019 L216.857,91.019 "
+                       id="path1201" />
                   </g>
                 </g>
               </g>
@@ -1414,12 +1147,12 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g364">
+                     id="g1209">
                     <path
                        vector-effect="non-scaling-stroke"
                        fill-rule="evenodd"
-                       d="M72.87639999999999,379.10662028 L126.98769999999999,348.91439654 L181.099,240.68475152000002 L235.21030000000002,105.36118929999998 "
-                       id="path362" />
+                       d="M72.1435,344.49166700000006 L121.5479,317.24979350000007 L170.9523,219.5962280000001 L220.35670000000002,97.49633250000005 "
+                       id="path1207" />
                   </g>
                 </g>
               </g>
@@ -1443,12 +1176,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g370">
+                   id="g1215">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
-                     points="55.30916645499999,399.765 361.000133545,399.765"
-                     id="polyline368" />
+                     points="55.309444744000004,363.131 335.999555256,363.131"
+                     id="polyline1213" />
                 </g>
                 <g
                    fill="none"
@@ -1473,12 +1206,12 @@
                        stroke-width="1"
                        stroke-linecap="square"
                        stroke-linejoin="bevel"
-                       transform="matrix(1,0,0,1,309.391,399.765)"
+                       transform="matrix(1,0,0,1,284.391,363.131)"
                        font-family=".AppleSystemUIFont"
                        font-size="13"
                        font-weight="400"
                        font-style="normal"
-                       id="g374">
+                       id="g1219">
                       <text
                          fill="#212121"
                          fill-opacity="1"
@@ -1490,7 +1223,7 @@
                          font-size="13"
                          font-weight="400"
                          font-style="normal"
-                         id="text372">60 FPS</text>
+                         id="text1217">60 FPS</text>
                     </g>
                   </g>
                 </g>
@@ -1515,12 +1248,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g381">
+                   id="g1226">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
-                     points="55.30916645499999,287.262 361.000133545,287.262"
-                     id="polyline379" />
+                     points="55.309444744000004,261.621 335.999555256,261.621"
+                     id="polyline1224" />
                 </g>
                 <g
                    fill="none"
@@ -1545,12 +1278,12 @@
                        stroke-width="1"
                        stroke-linecap="square"
                        stroke-linejoin="bevel"
-                       transform="matrix(1,0,0,1,311.719,287.262)"
+                       transform="matrix(1,0,0,1,286.719,261.621)"
                        font-family=".AppleSystemUIFont"
                        font-size="13"
                        font-weight="400"
                        font-style="normal"
-                       id="g385">
+                       id="g1230">
                       <text
                          fill="#212121"
                          fill-opacity="1"
@@ -1562,7 +1295,7 @@
                          font-size="13"
                          font-weight="400"
                          font-style="normal"
-                         id="text383">10 FPS</text>
+                         id="text1228">10 FPS</text>
                     </g>
                   </g>
                 </g>
@@ -1589,14 +1322,14 @@
                  font-size="13"
                  font-weight="400"
                  font-style="normal"
-                 id="g393">
+                 id="g1238">
                 <rect
                    vector-effect="non-scaling-stroke"
                    x="0"
                    y="0"
                    width="151.328"
                    height="162"
-                   id="rect391" />
+                   id="rect1236" />
               </g>
               <g
                  fill="none"
@@ -1617,12 +1350,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g397">
+                   id="g1242">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
                      points="72.3094,41.0 92.3094,41.0"
-                     id="polyline395" />
+                     id="polyline1240" />
                 </g>
                 <g
                    fill="#c7472e"
@@ -1636,12 +1369,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g401">
+                   id="g1246">
                   <path
                      vector-effect="non-scaling-stroke"
                      fill-rule="evenodd"
                      d="M85.8094,40.0 C85.8094,41.932994 84.24239399999999,43.5 82.3094,43.5 C80.376406,43.5 78.8094,41.932994 78.8094,40.0 C78.8094,38.067006 80.376406,36.5 82.3094,36.5 C84.24239399999999,36.5 85.8094,38.067006 85.8094,40.0 "
-                     id="path399" />
+                     id="path1244" />
                 </g>
               </g>
               <g
@@ -1672,7 +1405,7 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g406">
+                     id="g1251">
                     <text
                        fill="#000000"
                        fill-opacity="1"
@@ -1684,7 +1417,7 @@
                        font-size="12"
                        font-weight="400"
                        font-style="normal"
-                       id="text404">1 line</text>
+                       id="text1249">1 line</text>
                   </g>
                 </g>
               </g>
@@ -1709,12 +1442,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g412">
+                   id="g1257">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
                      points="72.3094,64.0 92.3094,64.0"
-                     id="polyline410" />
+                     id="polyline1255" />
                 </g>
               </g>
               <g
@@ -1745,7 +1478,7 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g417">
+                     id="g1262">
                     <text
                        fill="#000000"
                        fill-opacity="1"
@@ -1757,7 +1490,7 @@
                        font-size="12"
                        font-weight="400"
                        font-style="normal"
-                       id="text415">(down-sampled)</text>
+                       id="text1260">(down-sampled)</text>
                   </g>
                 </g>
               </g>
@@ -1780,12 +1513,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g423">
+                   id="g1268">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
                      points="72.3094,87.0 92.3094,87.0"
-                     id="polyline421" />
+                     id="polyline1266" />
                 </g>
                 <g
                    fill="#b65fd3"
@@ -1799,12 +1532,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g427">
+                   id="g1272">
                   <path
                      vector-effect="non-scaling-stroke"
                      fill-rule="evenodd"
                      d="M78.8094,89.5 L82.3094,82.5 L85.8094,89.5 L78.8094,89.5 "
-                     id="path425" />
+                     id="path1270" />
                 </g>
               </g>
               <g
@@ -1835,7 +1568,7 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g432">
+                     id="g1277">
                     <text
                        fill="#000000"
                        fill-opacity="1"
@@ -1847,7 +1580,7 @@
                        font-size="12"
                        font-weight="400"
                        font-style="normal"
-                       id="text430">10 lines</text>
+                       id="text1275">10 lines</text>
                   </g>
                 </g>
               </g>
@@ -1872,12 +1605,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g438">
+                   id="g1283">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
                      points="72.3094,110.0 92.3094,110.0"
-                     id="polyline436" />
+                     id="polyline1281" />
                 </g>
               </g>
               <g
@@ -1908,7 +1641,7 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g443">
+                     id="g1288">
                     <text
                        fill="#000000"
                        fill-opacity="1"
@@ -1920,7 +1653,7 @@
                        font-size="12"
                        font-weight="400"
                        font-style="normal"
-                       id="text441">(down-sampled)</text>
+                       id="text1286">(down-sampled)</text>
                   </g>
                 </g>
               </g>
@@ -1943,12 +1676,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g449">
+                   id="g1294">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
                      points="72.3094,133.0 92.3094,133.0"
-                     id="polyline447" />
+                     id="polyline1292" />
                 </g>
                 <g
                    fill="#41a7dc"
@@ -1962,12 +1695,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g453">
+                   id="g1298">
                   <path
                      vector-effect="non-scaling-stroke"
                      fill-rule="evenodd"
                      d="M78.8094,128.5 L85.8094,128.5 L85.8094,135.5 L78.8094,135.5 L78.8094,128.5 "
-                     id="path451" />
+                     id="path1296" />
                 </g>
               </g>
               <g
@@ -1998,7 +1731,7 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g458">
+                     id="g1303">
                     <text
                        fill="#000000"
                        fill-opacity="1"
@@ -2010,7 +1743,7 @@
                        font-size="12"
                        font-weight="400"
                        font-style="normal"
-                       id="text456">100 lines</text>
+                       id="text1301">100 lines</text>
                   </g>
                 </g>
               </g>
@@ -2035,12 +1768,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g464">
+                   id="g1309">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
                      points="72.3094,156.0 92.3094,156.0"
-                     id="polyline462" />
+                     id="polyline1307" />
                 </g>
               </g>
               <g
@@ -2071,7 +1804,7 @@
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g469">
+                     id="g1314">
                     <text
                        fill="#000000"
                        fill-opacity="1"
@@ -2083,7 +1816,7 @@
                        font-size="12"
                        font-weight="400"
                        font-style="normal"
-                       id="text467">(down-sampled)</text>
+                       id="text1312">(down-sampled)</text>
                   </g>
                 </g>
               </g>
@@ -2104,14 +1837,14 @@
                  font-size="13"
                  font-weight="400"
                  font-style="normal"
-                 id="g476">
+                 id="g1321">
                 <rect
                    vector-effect="non-scaling-stroke"
                    x="0"
                    y="0"
-                   width="305.691"
-                   height="534.8"
-                   id="rect474" />
+                   width="280.691"
+                   height="484.8"
+                   id="rect1319" />
               </g>
             </g>
           </g>
@@ -2144,12 +1877,12 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g485">
+             id="g1330">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="442.2,547.8 787.0,547.8"
-               id="polyline483" />
+               points="415.966,497.8 737.0,497.8"
+               id="polyline1328" />
           </g>
           <g
              fill="none"
@@ -2162,22 +1895,22 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g493">
+             id="g1338">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="461.3553,13.0 461.3553,547.8"
-               id="polyline487" />
+               points="434.4679,13.0 434.4679,497.8"
+               id="polyline1332" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="584.351,13.0 584.351,547.8"
-               id="polyline489" />
+               points="548.48,13.0 548.48,497.8"
+               id="polyline1334" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="707.347,13.0 707.347,547.8"
-               id="polyline491" />
+               points="662.492,13.0 662.492,497.8"
+               id="polyline1336" />
           </g>
           <g
              fill="none"
@@ -2190,27 +1923,27 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g501">
+             id="g1346">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="522.8532,13.0 522.8532,547.8"
-               id="polyline495" />
+               points="491.474,13.0 491.474,497.8"
+               id="polyline1340" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="645.8489999999999,13.0 645.8489999999999,547.8"
-               id="polyline497" />
+               points="605.486,13.0 605.486,497.8"
+               id="polyline1342" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="768.845,13.0 768.845,547.8"
-               id="polyline499" />
+               points="719.498,13.0 719.498,497.8"
+               id="polyline1344" />
           </g>
           <g
              fill="none"
              stroke="#000000"
-             stroke-opacity="0.0509804"
+             stroke-opacity="0.0470588"
              stroke-width="1"
              stroke-linecap="square"
              stroke-linejoin="bevel"
@@ -2218,267 +1951,267 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g607">
+             id="g1452">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="442.842575,13.0 442.842575,547.8"
-               id="polyline503" />
+               points="417.30737700000003,13.0 417.30737700000003,497.8"
+               id="polyline1348" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="447.71205,13.0 447.71205,547.8"
-               id="polyline505" />
+               points="421.82119,13.0 421.82119,497.8"
+               id="polyline1350" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="451.82914,13.0 451.82914,547.8"
-               id="polyline507" />
+               points="425.63757,13.0 425.63757,497.8"
+               id="polyline1352" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="455.39549999999997,13.0 455.39549999999997,547.8"
-               id="polyline509" />
+               points="428.94350000000003,13.0 428.94350000000003,497.8"
+               id="polyline1354" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="458.5413,13.0 458.5413,547.8"
-               id="polyline511" />
+               points="431.8595,13.0 431.8595,497.8"
+               id="polyline1356" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="461.3553,13.0 461.3553,547.8"
-               id="polyline513" />
+               points="434.4679,13.0 434.4679,497.8"
+               id="polyline1358" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="479.868,13.0 479.868,547.8"
-               id="polyline515" />
+               points="451.62850000000003,13.0 451.62850000000003,497.8"
+               id="polyline1360" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="490.6972,13.0 490.6972,547.8"
-               id="polyline517" />
+               points="461.6667,13.0 461.6667,497.8"
+               id="polyline1362" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="498.3807,13.0 498.3807,547.8"
-               id="polyline519" />
+               points="468.789,13.0 468.789,497.8"
+               id="polyline1364" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="504.3405,13.0 504.3405,547.8"
-               id="polyline521" />
+               points="474.3135,13.0 474.3135,497.8"
+               id="polyline1366" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="509.2099,13.0 509.2099,547.8"
-               id="polyline523" />
+               points="478.82730000000004,13.0 478.82730000000004,497.8"
+               id="polyline1368" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="513.327,13.0 513.327,547.8"
-               id="polyline525" />
+               points="482.6437,13.0 482.6437,497.8"
+               id="polyline1370" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="516.8933999999999,13.0 516.8933999999999,547.8"
-               id="polyline527" />
+               points="485.94960000000003,13.0 485.94960000000003,497.8"
+               id="polyline1372" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="520.0391999999999,13.0 520.0391999999999,547.8"
-               id="polyline529" />
+               points="488.86560000000003,13.0 488.86560000000003,497.8"
+               id="polyline1374" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="522.8532,13.0 522.8532,547.8"
-               id="polyline531" />
+               points="491.474,13.0 491.474,497.8"
+               id="polyline1376" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="541.3659,13.0 541.3659,547.8"
-               id="polyline533" />
+               points="508.6346,13.0 508.6346,497.8"
+               id="polyline1378" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="552.1949999999999,13.0 552.1949999999999,547.8"
-               id="polyline535" />
+               points="518.673,13.0 518.673,497.8"
+               id="polyline1380" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="559.879,13.0 559.879,547.8"
-               id="polyline537" />
+               points="525.795,13.0 525.795,497.8"
+               id="polyline1382" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="565.838,13.0 565.838,547.8"
-               id="polyline539" />
+               points="531.32,13.0 531.32,497.8"
+               id="polyline1384" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="570.708,13.0 570.708,547.8"
-               id="polyline541" />
+               points="535.833,13.0 535.833,497.8"
+               id="polyline1386" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="574.825,13.0 574.825,547.8"
-               id="polyline543" />
+               points="539.65,13.0 539.65,497.8"
+               id="polyline1388" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="578.391,13.0 578.391,547.8"
-               id="polyline545" />
+               points="542.956,13.0 542.956,497.8"
+               id="polyline1390" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="581.537,13.0 581.537,547.8"
-               id="polyline547" />
+               points="545.8720000000001,13.0 545.8720000000001,497.8"
+               id="polyline1392" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="584.351,13.0 584.351,547.8"
-               id="polyline549" />
+               points="548.48,13.0 548.48,497.8"
+               id="polyline1394" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="602.864,13.0 602.864,547.8"
-               id="polyline551" />
+               points="565.6410000000001,13.0 565.6410000000001,497.8"
+               id="polyline1396" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="613.693,13.0 613.693,547.8"
-               id="polyline553" />
+               points="575.679,13.0 575.679,497.8"
+               id="polyline1398" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="621.376,13.0 621.376,547.8"
-               id="polyline555" />
+               points="582.801,13.0 582.801,497.8"
+               id="polyline1400" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="627.336,13.0 627.336,547.8"
-               id="polyline557" />
+               points="588.326,13.0 588.326,497.8"
+               id="polyline1402" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="632.206,13.0 632.206,547.8"
-               id="polyline559" />
+               points="592.84,13.0 592.84,497.8"
+               id="polyline1404" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="636.323,13.0 636.323,547.8"
-               id="polyline561" />
+               points="596.656,13.0 596.656,497.8"
+               id="polyline1406" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="639.889,13.0 639.889,547.8"
-               id="polyline563" />
+               points="599.962,13.0 599.962,497.8"
+               id="polyline1408" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="643.035,13.0 643.035,547.8"
-               id="polyline565" />
+               points="602.878,13.0 602.878,497.8"
+               id="polyline1410" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="645.8489999999999,13.0 645.8489999999999,547.8"
-               id="polyline567" />
+               points="605.486,13.0 605.486,497.8"
+               id="polyline1412" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="664.362,13.0 664.362,547.8"
-               id="polyline569" />
+               points="622.647,13.0 622.647,497.8"
+               id="polyline1414" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="675.191,13.0 675.191,547.8"
-               id="polyline571" />
+               points="632.685,13.0 632.685,497.8"
+               id="polyline1416" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="682.874,13.0 682.874,547.8"
-               id="polyline573" />
+               points="639.807,13.0 639.807,497.8"
+               id="polyline1418" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="688.834,13.0 688.834,547.8"
-               id="polyline575" />
+               points="645.332,13.0 645.332,497.8"
+               id="polyline1420" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="693.704,13.0 693.704,547.8"
-               id="polyline577" />
+               points="649.846,13.0 649.846,497.8"
+               id="polyline1422" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="697.821,13.0 697.821,547.8"
-               id="polyline579" />
+               points="653.662,13.0 653.662,497.8"
+               id="polyline1424" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="701.387,13.0 701.387,547.8"
-               id="polyline581" />
+               points="656.9680000000001,13.0 656.9680000000001,497.8"
+               id="polyline1426" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="704.533,13.0 704.533,547.8"
-               id="polyline583" />
+               points="659.884,13.0 659.884,497.8"
+               id="polyline1428" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="707.347,13.0 707.347,547.8"
-               id="polyline585" />
+               points="662.492,13.0 662.492,497.8"
+               id="polyline1430" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="725.86,13.0 725.86,547.8"
-               id="polyline587" />
+               points="679.653,13.0 679.653,497.8"
+               id="polyline1432" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="736.689,13.0 736.689,547.8"
-               id="polyline589" />
+               points="689.691,13.0 689.691,497.8"
+               id="polyline1434" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="744.3720000000001,13.0 744.3720000000001,547.8"
-               id="polyline591" />
+               points="696.813,13.0 696.813,497.8"
+               id="polyline1436" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="750.332,13.0 750.332,547.8"
-               id="polyline593" />
+               points="702.338,13.0 702.338,497.8"
+               id="polyline1438" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="755.201,13.0 755.201,547.8"
-               id="polyline595" />
+               points="706.8520000000001,13.0 706.8520000000001,497.8"
+               id="polyline1440" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="759.319,13.0 759.319,547.8"
-               id="polyline597" />
+               points="710.668,13.0 710.668,497.8"
+               id="polyline1442" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="762.885,13.0 762.885,547.8"
-               id="polyline599" />
+               points="713.9739999999999,13.0 713.9739999999999,497.8"
+               id="polyline1444" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="766.031,13.0 766.031,547.8"
-               id="polyline601" />
+               points="716.89,13.0 716.89,497.8"
+               id="polyline1446" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="768.845,13.0 768.845,547.8"
-               id="polyline603" />
+               points="719.498,13.0 719.498,497.8"
+               id="polyline1448" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.357,13.0 787.357,547.8"
-               id="polyline605" />
+               points="736.659,13.0 736.659,497.8"
+               id="polyline1450" />
           </g>
           <g
              fill="none"
@@ -2487,84 +2220,84 @@
              stroke-width="1"
              stroke-linecap="square"
              stroke-linejoin="bevel"
-             transform="matrix(1,0,0,1,442.7,547.8)"
+             transform="matrix(1,0,0,1,416.466,497.8)"
              font-family=".AppleSystemUIFont"
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g621">
+             id="g1466">
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="9.67188"
+               x="-3.46875"
                y="14.125"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text609">10²</text>
+               id="text1454">0.0001</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="132.531"
+               x="118.641"
                y="14.125"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text611">10⁴</text>
+               id="text1456">0.01</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="255.547"
+               x="243.047"
                y="14.125"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text613">10⁶</text>
+               id="text1458">1</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="71.0938"
+               x="57.5781"
                y="14.125"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text615">10³</text>
+               id="text1460">0.001</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="194.125"
+               x="179.891"
                y="14.125"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text617">10⁵</text>
+               id="text1462">0.1</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="317.297"
+               x="294.578"
                y="14.125"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text619">10⁷</text>
+               id="text1464">10¹</text>
           </g>
           <g
              fill="none"
@@ -2581,12 +2314,12 @@
                stroke-width="1"
                stroke-linecap="square"
                stroke-linejoin="bevel"
-               transform="matrix(1,0,0,1,571.2,567.8)"
+               transform="matrix(1,0,0,1,506.966,517.8)"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="g625">
+               id="g1470">
               <text
                  fill="#000000"
                  fill-opacity="1"
@@ -2598,7 +2331,7 @@
                  font-size="13"
                  font-weight="400"
                  font-style="normal"
-                 id="text623">Total Points </text>
+                 id="text1468">Total Points (x1e+06)</text>
             </g>
           </g>
         </g>
@@ -2621,12 +2354,12 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g631">
+             id="g1476">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="442.2,13.0 442.2,547.8"
-               id="polyline629" />
+               points="415.9656,13.0 415.9656,497.8"
+               id="polyline1474" />
           </g>
           <g
              fill="none"
@@ -2639,12 +2372,12 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g635">
+             id="g1480">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,353.232 442.7,353.232"
-               id="polyline633" />
+               points="737.5,321.145 416.4656,321.145"
+               id="polyline1478" />
           </g>
           <g
              fill="none"
@@ -2657,12 +2390,12 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g639">
+             id="g1484">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,121.392 442.7,121.392"
-               id="polyline637" />
+               points="737.5,111.9606 416.4656,111.9606"
+               id="polyline1482" />
           </g>
           <g
              fill="none"
@@ -2675,102 +2408,102 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g679">
+             id="g1524">
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,515.28 442.7,515.28"
-               id="polyline641" />
+               points="737.5,467.358 416.4656,467.358"
+               id="polyline1486" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,474.455 442.7,474.455"
-               id="polyline643" />
+               points="737.5,430.522 416.4656,430.522"
+               id="polyline1488" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,445.49 442.7,445.49"
-               id="polyline645" />
+               points="737.5,404.387 416.4656,404.387"
+               id="polyline1490" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,423.022 442.7,423.022"
-               id="polyline647" />
+               points="737.5,384.115 416.4656,384.115"
+               id="polyline1492" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,404.665 442.7,404.665"
-               id="polyline649" />
+               points="737.5,367.552 416.4656,367.552"
+               id="polyline1494" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,389.144 442.7,389.144"
-               id="polyline651" />
+               points="737.5,353.548 416.4656,353.548"
+               id="polyline1496" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,375.699 442.7,375.699"
-               id="polyline653" />
+               points="737.5,341.417 416.4656,341.417"
+               id="polyline1498" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,363.84 442.7,363.84"
-               id="polyline655" />
+               points="737.5,330.716 416.4656,330.716"
+               id="polyline1500" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,353.232 442.7,353.232"
-               id="polyline657" />
+               points="737.5,321.145 416.4656,321.145"
+               id="polyline1502" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,283.441 442.7,283.441"
-               id="polyline659" />
+               points="737.5,258.174 416.4656,258.174"
+               id="polyline1504" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,242.616 442.7,242.616"
-               id="polyline661" />
+               points="737.5,221.338 416.4656,221.338"
+               id="polyline1506" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,213.65 442.7,213.65"
-               id="polyline663" />
+               points="737.5,195.203 416.4656,195.203"
+               id="polyline1508" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,191.183 442.7,191.183"
-               id="polyline665" />
+               points="737.5,174.931 416.4656,174.931"
+               id="polyline1510" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,172.826 442.7,172.826"
-               id="polyline667" />
+               points="737.5,158.368 416.4656,158.368"
+               id="polyline1512" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,157.305 442.7,157.305"
-               id="polyline669" />
+               points="737.5,144.364 416.4656,144.364"
+               id="polyline1514" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,143.86 442.7,143.86"
-               id="polyline671" />
+               points="737.5,132.233 416.4656,132.233"
+               id="polyline1516" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,132.001 442.7,132.001"
-               id="polyline673" />
+               points="737.5,121.532 416.4656,121.532"
+               id="polyline1518" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,121.392 442.7,121.392"
-               id="polyline675" />
+               points="737.5,111.9606 416.4656,111.9606"
+               id="polyline1520" />
             <polyline
                fill="none"
                vector-effect="non-scaling-stroke"
-               points="787.5,51.6018 442.7,51.6018"
-               id="polyline677" />
+               points="737.5,48.9899 416.4656,48.9899"
+               id="polyline1522" />
           </g>
           <g
              fill="none"
@@ -2779,264 +2512,264 @@
              stroke-width="1"
              stroke-linecap="square"
              stroke-linejoin="bevel"
-             transform="matrix(1,0,0,1,388.5,13)"
+             transform="matrix(1,0,0,1,363.5,13)"
              font-family=".AppleSystemUIFont"
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g723">
+             id="g1568">
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="43.2344"
-               y="344.703"
+               x="42"
+               y="312.609"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text681">1</text>
+               id="text1526">1</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="32.2813"
-               y="112.859"
+               x="31.0469"
+               y="103.422"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text683">10¹</text>
+               id="text1528">10¹</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="28.5313"
-               y="506.75"
+               x="27.2969"
+               y="458.828"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text685">0.2</text>
+               id="text1530">0.2</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="27.8125"
-               y="465.922"
+               x="26.5781"
+               y="421.984"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text687">0.3</text>
+               id="text1532">0.3</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="28.5313"
-               y="436.953"
+               x="27.2969"
+               y="395.859"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text689">0.4</text>
+               id="text1534">0.4</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="28.875"
-               y="414.484"
+               x="27.6406"
+               y="375.578"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text691">0.5</text>
+               id="text1536">0.5</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="28.5313"
-               y="396.141"
+               x="27.2969"
+               y="359.016"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text693">0.6</text>
+               id="text1538">0.6</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="29.4531"
-               y="380.609"
+               x="28.2188"
+               y="345.016"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text695">0.7</text>
+               id="text1540">0.7</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="27.1563"
-               y="367.172"
+               x="25.9219"
+               y="332.891"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text697">0.8</text>
+               id="text1542">0.8</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="29.1094"
-               y="355.313"
+               x="27.875"
+               y="322.188"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text699">0.9</text>
+               id="text1544">0.9</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="43.2344"
-               y="344.703"
+               x="42"
+               y="312.609"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text701">1</text>
+               id="text1546">1</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="41.4219"
-               y="274.906"
+               x="40.1875"
+               y="249.641"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text703">2</text>
+               id="text1548">2</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="41.125"
-               y="234.078"
+               x="39.8906"
+               y="212.813"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text705">3</text>
+               id="text1550">3</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="40.9063"
-               y="205.125"
+               x="39.6719"
+               y="186.672"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text707">4</text>
+               id="text1552">4</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="41.2344"
-               y="182.656"
+               x="40"
+               y="166.406"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text709">5</text>
+               id="text1554">5</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="41"
-               y="164.297"
+               x="39.7656"
+               y="149.844"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text711">6</text>
+               id="text1556">6</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="41.875"
-               y="148.781"
+               x="40.6406"
+               y="135.828"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text713">7</text>
+               id="text1558">7</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="40.9688"
-               y="135.328"
+               x="39.7344"
+               y="123.703"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text715">8</text>
+               id="text1560">8</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="41"
-               y="123.469"
+               x="39.7656"
+               y="113"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text717">9</text>
+               id="text1562">9</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="32.2813"
-               y="112.859"
+               x="31.0469"
+               y="103.422"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text719">10¹</text>
+               id="text1564">10¹</text>
             <text
                fill="#000000"
                fill-opacity="1"
                stroke="none"
                xml:space="preserve"
-               x="20.7344"
-               y="43.0781"
+               x="19.5"
+               y="40.4531"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="text721">2·10¹</text>
+               id="text1566">2·10¹</text>
           </g>
           <g
              fill="none"
@@ -3053,12 +2786,12 @@
                stroke-width="1"
                stroke-linecap="square"
                stroke-linejoin="bevel"
-               transform="matrix(0,-1,1,0,383,368)"
+               transform="matrix(0,-1,1,0,358,343)"
                font-family=".AppleSystemUIFont"
                font-size="13"
                font-weight="400"
                font-style="normal"
-               id="g727">
+               id="g1572">
               <text
                  fill="#000000"
                  fill-opacity="1"
@@ -3070,7 +2803,7 @@
                  font-size="13"
                  font-weight="400"
                  font-style="normal"
-                 id="text725">Update Time per Point (µs) </text>
+                 id="text1570">Update Time per Point (µs) </text>
             </g>
           </g>
         </g>
@@ -3089,25 +2822,25 @@
              font-size="13"
              font-weight="400"
              font-style="normal"
-             id="g733">
+             id="g1578">
             <path
                vector-effect="non-scaling-stroke"
                fill-rule="evenodd"
-               d="M442.2,13.0 L787.0,13.0 L787.0,547.8 L442.2,547.8 L442.2,13.0 "
-               id="path731" />
+               d="M415.966,13.0 L737.0,13.0 L737.0,497.8 L415.966,497.8 L415.966,13.0 "
+               id="path1576" />
           </g>
           <clipPath
              id="ViewBox_2_clip">
             <path
                vector-effect="none"
                fill-rule="evenodd"
-               d="M442.2,13.0 L787.0,13.0 L787.0,547.8 L442.2,547.8 L442.2,13.0 "
+               d="M415.966,13.0 L737.0,13.0 L737.0,497.8 L415.966,497.8 L415.966,13.0 "
                stroke-width="1.0"
-               id="path735" />
+               id="path1580" />
           </clipPath>
           <g
              clip-path="url(#ViewBox_2_clip)"
-             id="g937">
+             id="g1782">
             <g
                fill="none"
                stroke="black"
@@ -3116,6 +2849,504 @@
                stroke-linecap="square"
                stroke-linejoin="bevel"
                id="ChildGroup_2">
+              <g
+                 id="PlotDataItem_7">
+                <g
+                   fill="none"
+                   stroke="black"
+                   stroke-width="1"
+                   fill-rule="evenodd"
+                   stroke-linecap="square"
+                   stroke-linejoin="bevel"
+                   id="PlotCurveItem_7">
+                  <g
+                     fill="none"
+                     stroke="#41a7dc"
+                     stroke-opacity="1"
+                     stroke-width="3"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1585">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M547.9793999999999,208.52598236799997 L604.9855,381.44793596799997 L661.9916000000001,456.91692112 L718.9977,471.55561744 "
+                       id="path1583" />
+                  </g>
+                </g>
+                <g
+                   fill="none"
+                   stroke="black"
+                   stroke-width="1"
+                   fill-rule="evenodd"
+                   stroke-linecap="square"
+                   stroke-linejoin="bevel"
+                   id="ScatterPlotItem_4">
+                  <g
+                     fill="#41a7dc"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1590">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M544.48,205.026 L551.48,205.026 L551.48,212.026 L544.48,212.026 L544.48,205.026 "
+                       id="path1588" />
+                  </g>
+                  <g
+                     fill="#41a7dc"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1594">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M601.486,377.948 L608.486,377.948 L608.486,384.948 L601.486,384.948 L601.486,377.948 "
+                       id="path1592" />
+                  </g>
+                  <g
+                     fill="#41a7dc"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1598">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M658.492,453.416 L665.492,453.416 L665.492,460.416 L658.492,460.416 L658.492,453.416 "
+                       id="path1596" />
+                  </g>
+                  <g
+                     fill="#41a7dc"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1602">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M715.498,468.055 L722.498,468.055 L722.498,475.055 L715.498,475.055 L715.498,468.055 "
+                       id="path1600" />
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="PlotDataItem_8">
+                <g
+                   fill="none"
+                   stroke="black"
+                   stroke-width="1"
+                   fill-rule="evenodd"
+                   stroke-linecap="square"
+                   stroke-linejoin="bevel"
+                   id="PlotCurveItem_8">
+                  <g
+                     fill="none"
+                     stroke="#41a7dc"
+                     stroke-opacity="1"
+                     stroke-dasharray="8,4"
+                     stroke-dashoffset="0"
+                     stroke-width="2"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1608">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M547.9793999999999,244.847437024 L604.9855,410.347751488 L661.9916000000001,462.938910112 L718.9977,476.328359584 "
+                       id="path1606" />
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="PlotDataItem_9">
+                <g
+                   fill="none"
+                   stroke="black"
+                   stroke-width="1"
+                   fill-rule="evenodd"
+                   stroke-linecap="square"
+                   stroke-linejoin="bevel"
+                   id="PlotCurveItem_9">
+                  <g
+                     fill="none"
+                     stroke="#c7472e"
+                     stroke-opacity="1"
+                     stroke-width="3"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1614">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M433.9672,35.115165760000025 L490.9733,207.5946952 L547.9793999999999,329.9127800128 L604.9855,378.95927392 L661.9916000000001,385.852723456 L718.9977,376.298871808 "
+                       id="path1612" />
+                  </g>
+                </g>
+                <g
+                   fill="none"
+                   stroke="black"
+                   stroke-width="1"
+                   fill-rule="evenodd"
+                   stroke-linecap="square"
+                   stroke-linejoin="bevel"
+                   id="ScatterPlotItem_5">
+                  <g
+                     fill="#c7472e"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1619">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M437.468,35.1156 C437.468,37.048594 435.900994,38.6156 433.968,38.6156 C432.035006,38.6156 430.468,37.048594 430.468,35.1156 C430.468,33.182606 432.035006,31.6156 433.968,31.6156 C435.900994,31.6156 437.468,33.182606 437.468,35.1156 "
+                       id="path1617" />
+                  </g>
+                  <g
+                     fill="#c7472e"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1623">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M494.474,207.594 C494.474,209.526994 492.906994,211.094 490.974,211.094 C489.041006,211.094 487.474,209.526994 487.474,207.594 C487.474,205.661006 489.041006,204.094 490.974,204.094 C492.906994,204.094 494.474,205.661006 494.474,207.594 "
+                       id="path1621" />
+                  </g>
+                  <g
+                     fill="#c7472e"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1627">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M551.48,329.912 C551.48,331.844994 549.912994,333.412 547.98,333.412 C546.047006,333.412 544.48,331.844994 544.48,329.912 C544.48,327.97900599999997 546.047006,326.412 547.98,326.412 C549.912994,326.412 551.48,327.97900599999997 551.48,329.912 "
+                       id="path1625" />
+                  </g>
+                  <g
+                     fill="#c7472e"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1631">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M608.486,378.959 C608.486,380.891994 606.918994,382.459 604.986,382.459 C603.053006,382.459 601.486,380.891994 601.486,378.959 C601.486,377.026006 603.053006,375.459 604.986,375.459 C606.918994,375.459 608.486,377.026006 608.486,378.959 "
+                       id="path1629" />
+                  </g>
+                  <g
+                     fill="#c7472e"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1635">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M665.492,385.852 C665.492,387.784994 663.924994,389.352 661.992,389.352 C660.059006,389.352 658.492,387.784994 658.492,385.852 C658.492,383.91900599999997 660.059006,382.352 661.992,382.352 C663.924994,382.352 665.492,383.91900599999997 665.492,385.852 "
+                       id="path1633" />
+                  </g>
+                  <g
+                     fill="#c7472e"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1639">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M722.498,376.299 C722.498,378.231994 720.930994,379.799 718.998,379.799 C717.065006,379.799 715.498,378.231994 715.498,376.299 C715.498,374.36600599999997 717.065006,372.799 718.998,372.799 C720.930994,372.799 722.498,374.36600599999997 722.498,376.299 "
+                       id="path1637" />
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="PlotDataItem_10">
+                <g
+                   fill="none"
+                   stroke="black"
+                   stroke-width="1"
+                   fill-rule="evenodd"
+                   stroke-linecap="square"
+                   stroke-linejoin="bevel"
+                   id="PlotCurveItem_10">
+                  <g
+                     fill="none"
+                     stroke="#c7472e"
+                     stroke-opacity="1"
+                     stroke-dasharray="8,4"
+                     stroke-dashoffset="0"
+                     stroke-width="2"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1645">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M433.9672,37.88685376000001 L490.9733,224.41873676799997 L547.9793999999999,356.047977952 L604.9855,397.01812864 L661.9916000000001,408.29753910399995 L718.9977,403.418531488 "
+                       id="path1643" />
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="PlotDataItem_11">
+                <g
+                   fill="none"
+                   stroke="black"
+                   stroke-width="1"
+                   fill-rule="evenodd"
+                   stroke-linecap="square"
+                   stroke-linejoin="bevel"
+                   id="PlotCurveItem_11">
+                  <g
+                     fill="none"
+                     stroke="#b65fd3"
+                     stroke-opacity="1"
+                     stroke-width="3"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1651">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M490.9733,140.05524793599997 L547.9793999999999,321.50911822143996 L604.9855,427.45607411199995 L661.9916000000001,450.545385664 L718.9977,449.22104175999993 "
+                       id="path1649" />
+                  </g>
+                </g>
+                <g
+                   fill="none"
+                   stroke="black"
+                   stroke-width="1"
+                   fill-rule="evenodd"
+                   stroke-linecap="square"
+                   stroke-linejoin="bevel"
+                   id="ScatterPlotItem_6">
+                  <g
+                     fill="#b65fd3"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1656">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M487.474,143.555 L490.974,136.555 L494.474,143.555 L487.474,143.555 "
+                       id="path1654" />
+                  </g>
+                  <g
+                     fill="#b65fd3"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1660">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M544.48,325.009 L547.98,318.009 L551.48,325.009 L544.48,325.009 "
+                       id="path1658" />
+                  </g>
+                  <g
+                     fill="#b65fd3"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1664">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M601.486,430.956 L604.986,423.956 L608.486,430.956 L601.486,430.956 "
+                       id="path1662" />
+                  </g>
+                  <g
+                     fill="#b65fd3"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1668">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M658.492,454.045 L661.992,447.045 L665.492,454.045 L658.492,454.045 "
+                       id="path1666" />
+                  </g>
+                  <g
+                     fill="#b65fd3"
+                     fill-opacity="1"
+                     stroke="#000000"
+                     stroke-opacity="1"
+                     stroke-width="1"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1672">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M715.498,452.721 L718.998,445.721 L722.498,452.721 L715.498,452.721 "
+                       id="path1670" />
+                  </g>
+                </g>
+              </g>
+              <g
+                 id="PlotDataItem_12">
+                <g
+                   fill="none"
+                   stroke="black"
+                   stroke-width="1"
+                   fill-rule="evenodd"
+                   stroke-linecap="square"
+                   stroke-linejoin="bevel"
+                   id="PlotCurveItem_12">
+                  <g
+                     fill="none"
+                     stroke="#b65fd3"
+                     stroke-opacity="1"
+                     stroke-dasharray="8,4"
+                     stroke-dashoffset="0"
+                     stroke-width="2"
+                     stroke-linecap="square"
+                     stroke-linejoin="bevel"
+                     font-family=".AppleSystemUIFont"
+                     font-size="13"
+                     font-weight="400"
+                     font-style="normal"
+                     id="g1678">
+                    <path
+                       vector-effect="non-scaling-stroke"
+                       fill-rule="evenodd"
+                       d="M490.9733,171.89409865599998 L547.9793999999999,356.717366752 L604.9855,441.827014912 L661.9916000000001,461.692801024 L718.9977,463.535293696 "
+                       id="path1676" />
+                  </g>
+                </g>
+              </g>
               <g
                  fill="none"
                  stroke="black"
@@ -3138,12 +3369,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g740">
+                   id="g1684">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
-                     points="442.200412035,515.28 787.000687965,515.28"
-                     id="polyline738" />
+                     points="415.965243681,467.358 736.999656319,467.358"
+                     id="polyline1682" />
                 </g>
                 <g
                    fill="none"
@@ -3168,12 +3399,12 @@
                        stroke-width="1"
                        stroke-linecap="square"
                        stroke-linejoin="bevel"
-                       transform="matrix(1,0,0,1,442.2,491.28)"
+                       transform="matrix(1,0,0,1,415.966,443.358)"
                        font-family=".AppleSystemUIFont"
                        font-size="13"
                        font-weight="400"
                        font-style="normal"
-                       id="g744">
+                       id="g1688">
                       <text
                          fill="#212121"
                          fill-opacity="1"
@@ -3185,506 +3416,8 @@
                          font-size="13"
                          font-weight="400"
                          font-style="normal"
-                         id="text742">200 ns</text>
+                         id="text1686">200 ns</text>
                     </g>
-                  </g>
-                </g>
-              </g>
-              <g
-                 id="PlotDataItem_7">
-                <g
-                   fill="none"
-                   stroke="black"
-                   stroke-width="1"
-                   fill-rule="evenodd"
-                   stroke-linecap="square"
-                   stroke-linejoin="bevel"
-                   id="PlotCurveItem_7">
-                  <g
-                     fill="none"
-                     stroke="#c7472e"
-                     stroke-opacity="1"
-                     stroke-width="3"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g751">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M460.85580000000004,36.22462496000003 L522.3537,227.38399482500003 L583.8516,362.9493462138 L645.3495,417.30766282 L706.8474,424.94768522600003 L768.3453,414.35913441800005 "
-                       id="path749" />
-                  </g>
-                </g>
-                <g
-                   fill="none"
-                   stroke="black"
-                   stroke-width="1"
-                   fill-rule="evenodd"
-                   stroke-linecap="square"
-                   stroke-linejoin="bevel"
-                   id="ScatterPlotItem_4">
-                  <g
-                     fill="#c7472e"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g756">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M464.355,36.2248 C464.355,38.157794 462.787994,39.7248 460.855,39.7248 C458.922006,39.7248 457.355,38.157794 457.355,36.2248 C457.355,34.291806 458.922006,32.7248 460.855,32.7248 C462.787994,32.7248 464.355,34.291806 464.355,36.2248 "
-                       id="path754" />
-                  </g>
-                  <g
-                     fill="#c7472e"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g760">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M525.853,227.383 C525.853,229.31599400000002 524.285994,230.883 522.353,230.883 C520.420006,230.883 518.853,229.31599400000002 518.853,227.383 C518.853,225.450006 520.420006,223.883 522.353,223.883 C524.285994,223.883 525.853,225.450006 525.853,227.383 "
-                       id="path758" />
-                  </g>
-                  <g
-                     fill="#c7472e"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g764">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M587.351,362.949 C587.351,364.881994 585.783994,366.449 583.851,366.449 C581.918006,366.449 580.351,364.881994 580.351,362.949 C580.351,361.016006 581.918006,359.449 583.851,359.449 C585.783994,359.449 587.351,361.016006 587.351,362.949 "
-                       id="path762" />
-                  </g>
-                  <g
-                     fill="#c7472e"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g768">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M648.849,417.307 C648.849,419.239994 647.281994,420.807 645.349,420.807 C643.416006,420.807 641.849,419.239994 641.849,417.307 C641.849,415.374006 643.416006,413.807 645.349,413.807 C647.281994,413.807 648.849,415.374006 648.849,417.307 "
-                       id="path766" />
-                  </g>
-                  <g
-                     fill="#c7472e"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g772">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M710.347,424.947 C710.347,426.879994 708.779994,428.447 706.847,428.447 C704.914006,428.447 703.347,426.879994 703.347,424.947 C703.347,423.014006 704.914006,421.447 706.847,421.447 C708.779994,421.447 710.347,423.014006 710.347,424.947 "
-                       id="path770" />
-                  </g>
-                  <g
-                     fill="#c7472e"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g776">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M771.845,414.359 C771.845,416.291994 770.277994,417.859 768.345,417.859 C766.412006,417.859 764.845,416.291994 764.845,414.359 C764.845,412.426006 766.412006,410.859 768.345,410.859 C770.277994,410.859 771.845,412.426006 771.845,414.359 "
-                       id="path774" />
-                  </g>
-                </g>
-              </g>
-              <g
-                 id="PlotDataItem_8">
-                <g
-                   fill="none"
-                   stroke="black"
-                   stroke-width="1"
-                   fill-rule="evenodd"
-                   stroke-linecap="square"
-                   stroke-linejoin="bevel"
-                   id="PlotCurveItem_8">
-                  <g
-                     fill="none"
-                     stroke="#c7472e"
-                     stroke-opacity="1"
-                     stroke-dasharray="8,4"
-                     stroke-dashoffset="0"
-                     stroke-width="2"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g782">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M460.85580000000004,39.296491710000055 L522.3537,246.03011007800004 L583.8516,391.91503266700005 L645.3495,437.32232369 L706.8474,449.82331440900003 L768.3453,444.41590157300004 "
-                       id="path780" />
-                  </g>
-                </g>
-              </g>
-              <g
-                 id="PlotDataItem_9">
-                <g
-                   fill="none"
-                   stroke="black"
-                   stroke-width="1"
-                   fill-rule="evenodd"
-                   stroke-linecap="square"
-                   stroke-linejoin="bevel"
-                   id="PlotCurveItem_9">
-                  <g
-                     fill="none"
-                     stroke="#b65fd3"
-                     stroke-opacity="1"
-                     stroke-width="3"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g788">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M522.3537,152.52990505600002 L583.8516,353.63555287374004 L645.3495,471.056752902 L706.8474,496.64667804400005 L768.3453,495.178905335 "
-                       id="path786" />
-                  </g>
-                </g>
-                <g
-                   fill="none"
-                   stroke="black"
-                   stroke-width="1"
-                   fill-rule="evenodd"
-                   stroke-linecap="square"
-                   stroke-linejoin="bevel"
-                   id="ScatterPlotItem_5">
-                  <g
-                     fill="#b65fd3"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g793">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M518.853,156.029 L522.353,149.029 L525.853,156.029 L518.853,156.029 "
-                       id="path791" />
-                  </g>
-                  <g
-                     fill="#b65fd3"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g797">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M580.351,357.135 L583.851,350.135 L587.351,357.135 L580.351,357.135 "
-                       id="path795" />
-                  </g>
-                  <g
-                     fill="#b65fd3"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g801">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M641.849,474.556 L645.349,467.556 L648.849,474.556 L641.849,474.556 "
-                       id="path799" />
-                  </g>
-                  <g
-                     fill="#b65fd3"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g805">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M703.347,500.146 L706.847,493.146 L710.347,500.146 L703.347,500.146 "
-                       id="path803" />
-                  </g>
-                  <g
-                     fill="#b65fd3"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g809">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M764.845,498.679 L768.345,491.679 L771.845,498.679 L764.845,498.679 "
-                       id="path807" />
-                  </g>
-                </g>
-              </g>
-              <g
-                 id="PlotDataItem_10">
-                <g
-                   fill="none"
-                   stroke="black"
-                   stroke-width="1"
-                   fill-rule="evenodd"
-                   stroke-linecap="square"
-                   stroke-linejoin="bevel"
-                   id="PlotCurveItem_10">
-                  <g
-                     fill="none"
-                     stroke="#b65fd3"
-                     stroke-opacity="1"
-                     stroke-dasharray="8,4"
-                     stroke-dashoffset="0"
-                     stroke-width="2"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g815">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M522.3537,187.81696005100002 L583.8516,392.656917467 L645.3495,486.98409220200006 L706.8474,509.00137835400005 L768.3453,511.043416266 "
-                       id="path813" />
-                  </g>
-                </g>
-              </g>
-              <g
-                 id="PlotDataItem_11">
-                <g
-                   fill="none"
-                   stroke="black"
-                   stroke-width="1"
-                   fill-rule="evenodd"
-                   stroke-linecap="square"
-                   stroke-linejoin="bevel"
-                   id="PlotCurveItem_11">
-                  <g
-                     fill="none"
-                     stroke="#41a7dc"
-                     stroke-opacity="1"
-                     stroke-width="3"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g821">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M583.8516,228.41614205300004 L645.3495,420.065851403 L706.8474,503.70826214500005 L768.3453,519.932355365 "
-                       id="path819" />
-                  </g>
-                </g>
-                <g
-                   fill="none"
-                   stroke="black"
-                   stroke-width="1"
-                   fill-rule="evenodd"
-                   stroke-linecap="square"
-                   stroke-linejoin="bevel"
-                   id="ScatterPlotItem_6">
-                  <g
-                     fill="#41a7dc"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g826">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M580.351,224.916 L587.351,224.916 L587.351,231.916 L580.351,231.916 L580.351,224.916 "
-                       id="path824" />
-                  </g>
-                  <g
-                     fill="#41a7dc"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g830">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M641.849,416.565 L648.849,416.565 L648.849,423.565 L641.849,423.565 L641.849,416.565 "
-                       id="path828" />
-                  </g>
-                  <g
-                     fill="#41a7dc"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g834">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M703.347,500.208 L710.347,500.208 L710.347,507.208 L703.347,507.208 L703.347,500.208 "
-                       id="path832" />
-                  </g>
-                  <g
-                     fill="#41a7dc"
-                     fill-opacity="1"
-                     stroke="#000000"
-                     stroke-opacity="1"
-                     stroke-width="1"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g838">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M764.845,516.432 L771.845,516.432 L771.845,523.432 L764.845,523.432 L764.845,516.432 "
-                       id="path836" />
-                  </g>
-                </g>
-              </g>
-              <g
-                 id="PlotDataItem_12">
-                <g
-                   fill="none"
-                   stroke="black"
-                   stroke-width="1"
-                   fill-rule="evenodd"
-                   stroke-linecap="square"
-                   stroke-linejoin="bevel"
-                   id="PlotCurveItem_12">
-                  <g
-                     fill="none"
-                     stroke="#41a7dc"
-                     stroke-opacity="1"
-                     stroke-dasharray="8,4"
-                     stroke-dashoffset="0"
-                     stroke-width="2"
-                     stroke-linecap="square"
-                     stroke-linejoin="bevel"
-                     font-family=".AppleSystemUIFont"
-                     font-size="13"
-                     font-weight="400"
-                     font-style="normal"
-                     id="g844">
-                    <path
-                       vector-effect="non-scaling-stroke"
-                       fill-rule="evenodd"
-                       d="M583.8516,268.67127497900003 L645.3495,452.095568448 L706.8474,510.382443277 L768.3453,525.221993989 "
-                       id="path842" />
                   </g>
                 </g>
               </g>
@@ -3705,19 +3438,19 @@
                  stroke-width="1"
                  stroke-linecap="square"
                  stroke-linejoin="bevel"
-                 transform="matrix(1,0,0,1,625.672,18)"
+                 transform="matrix(1,0,0,1,575.672,18)"
                  font-family=".AppleSystemUIFont"
                  font-size="13"
                  font-weight="400"
                  font-style="normal"
-                 id="g851">
+                 id="g1696">
                 <rect
                    vector-effect="non-scaling-stroke"
                    x="0"
                    y="0"
                    width="151.328"
                    height="162"
-                   id="rect849" />
+                   id="rect1694" />
               </g>
               <g
                  fill="none"
@@ -3729,7 +3462,7 @@
                  id="ItemSample_7">
                 <g
                    fill="none"
-                   stroke="#c7472e"
+                   stroke="#41a7dc"
                    stroke-opacity="1"
                    stroke-width="3"
                    stroke-linecap="square"
@@ -3738,15 +3471,15 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g855">
+                   id="g1700">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
-                     points="637.672,41.0 657.672,41.0"
-                     id="polyline853" />
+                     points="587.672,41.0 607.672,41.0"
+                     id="polyline1698" />
                 </g>
                 <g
-                   fill="#c7472e"
+                   fill="#41a7dc"
                    fill-opacity="1"
                    stroke="#000000"
                    stroke-opacity="1"
@@ -3757,12 +3490,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g859">
+                   id="g1704">
                   <path
                      vector-effect="non-scaling-stroke"
                      fill-rule="evenodd"
-                     d="M651.172,40.0 C651.172,41.932994 649.604994,43.5 647.672,43.5 C645.739006,43.5 644.172,41.932994 644.172,40.0 C644.172,38.067006 645.739006,36.5 647.672,36.5 C649.604994,36.5 651.172,38.067006 651.172,40.0 "
-                     id="path857" />
+                     d="M594.172,36.5 L601.172,36.5 L601.172,43.5 L594.172,43.5 L594.172,36.5 "
+                     id="path1702" />
                 </g>
               </g>
               <g
@@ -3788,12 +3521,12 @@
                      stroke-width="1"
                      stroke-linecap="square"
                      stroke-linejoin="bevel"
-                     transform="matrix(1,0,0,1,662.672,30)"
+                     transform="matrix(1,0,0,1,612.672,30)"
                      font-family=".AppleSystemUIFont"
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g864">
+                     id="g1709">
                     <text
                        fill="#000000"
                        fill-opacity="1"
@@ -3805,7 +3538,7 @@
                        font-size="12"
                        font-weight="400"
                        font-style="normal"
-                       id="text862">1 line</text>
+                       id="text1707">100 lines</text>
                   </g>
                 </g>
               </g>
@@ -3819,7 +3552,7 @@
                  id="ItemSample_8">
                 <g
                    fill="none"
-                   stroke="#c7472e"
+                   stroke="#41a7dc"
                    stroke-opacity="1"
                    stroke-dasharray="8,4"
                    stroke-dashoffset="0"
@@ -3830,12 +3563,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g870">
+                   id="g1715">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
-                     points="637.672,64.0 657.672,64.0"
-                     id="polyline868" />
+                     points="587.672,64.0 607.672,64.0"
+                     id="polyline1713" />
                 </g>
               </g>
               <g
@@ -3861,12 +3594,12 @@
                      stroke-width="1"
                      stroke-linecap="square"
                      stroke-linejoin="bevel"
-                     transform="matrix(1,0,0,1,662.672,53)"
+                     transform="matrix(1,0,0,1,612.672,53)"
                      font-family=".AppleSystemUIFont"
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g875">
+                     id="g1720">
                     <text
                        fill="#000000"
                        fill-opacity="1"
@@ -3878,7 +3611,7 @@
                        font-size="12"
                        font-weight="400"
                        font-style="normal"
-                       id="text873">(down-sampled)</text>
+                       id="text1718">(down-sampled)</text>
                   </g>
                 </g>
               </g>
@@ -3892,7 +3625,7 @@
                  id="ItemSample_9">
                 <g
                    fill="none"
-                   stroke="#b65fd3"
+                   stroke="#c7472e"
                    stroke-opacity="1"
                    stroke-width="3"
                    stroke-linecap="square"
@@ -3901,15 +3634,15 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g881">
+                   id="g1726">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
-                     points="637.672,87.0 657.672,87.0"
-                     id="polyline879" />
+                     points="587.672,87.0 607.672,87.0"
+                     id="polyline1724" />
                 </g>
                 <g
-                   fill="#b65fd3"
+                   fill="#c7472e"
                    fill-opacity="1"
                    stroke="#000000"
                    stroke-opacity="1"
@@ -3920,12 +3653,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g885">
+                   id="g1730">
                   <path
                      vector-effect="non-scaling-stroke"
                      fill-rule="evenodd"
-                     d="M644.172,89.5 L647.672,82.5 L651.172,89.5 L644.172,89.5 "
-                     id="path883" />
+                     d="M601.172,86.0 C601.172,87.932994 599.604994,89.5 597.672,89.5 C595.739006,89.5 594.172,87.932994 594.172,86.0 C594.172,84.067006 595.739006,82.5 597.672,82.5 C599.604994,82.5 601.172,84.067006 601.172,86.0 "
+                     id="path1728" />
                 </g>
               </g>
               <g
@@ -3951,12 +3684,12 @@
                      stroke-width="1"
                      stroke-linecap="square"
                      stroke-linejoin="bevel"
-                     transform="matrix(1,0,0,1,662.672,76)"
+                     transform="matrix(1,0,0,1,612.672,76)"
                      font-family=".AppleSystemUIFont"
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g890">
+                     id="g1735">
                     <text
                        fill="#000000"
                        fill-opacity="1"
@@ -3968,7 +3701,7 @@
                        font-size="12"
                        font-weight="400"
                        font-style="normal"
-                       id="text888">10 lines</text>
+                       id="text1733">1 line</text>
                   </g>
                 </g>
               </g>
@@ -3982,7 +3715,7 @@
                  id="ItemSample_10">
                 <g
                    fill="none"
-                   stroke="#b65fd3"
+                   stroke="#c7472e"
                    stroke-opacity="1"
                    stroke-dasharray="8,4"
                    stroke-dashoffset="0"
@@ -3993,12 +3726,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g896">
+                   id="g1741">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
-                     points="637.672,110.0 657.672,110.0"
-                     id="polyline894" />
+                     points="587.672,110.0 607.672,110.0"
+                     id="polyline1739" />
                 </g>
               </g>
               <g
@@ -4024,12 +3757,12 @@
                      stroke-width="1"
                      stroke-linecap="square"
                      stroke-linejoin="bevel"
-                     transform="matrix(1,0,0,1,662.672,99)"
+                     transform="matrix(1,0,0,1,612.672,99)"
                      font-family=".AppleSystemUIFont"
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g901">
+                     id="g1746">
                     <text
                        fill="#000000"
                        fill-opacity="1"
@@ -4041,7 +3774,7 @@
                        font-size="12"
                        font-weight="400"
                        font-style="normal"
-                       id="text899">(down-sampled)</text>
+                       id="text1744">(down-sampled)</text>
                   </g>
                 </g>
               </g>
@@ -4055,7 +3788,7 @@
                  id="ItemSample_11">
                 <g
                    fill="none"
-                   stroke="#41a7dc"
+                   stroke="#b65fd3"
                    stroke-opacity="1"
                    stroke-width="3"
                    stroke-linecap="square"
@@ -4064,15 +3797,15 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g907">
+                   id="g1752">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
-                     points="637.672,133.0 657.672,133.0"
-                     id="polyline905" />
+                     points="587.672,133.0 607.672,133.0"
+                     id="polyline1750" />
                 </g>
                 <g
-                   fill="#41a7dc"
+                   fill="#b65fd3"
                    fill-opacity="1"
                    stroke="#000000"
                    stroke-opacity="1"
@@ -4083,12 +3816,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g911">
+                   id="g1756">
                   <path
                      vector-effect="non-scaling-stroke"
                      fill-rule="evenodd"
-                     d="M644.172,128.5 L651.172,128.5 L651.172,135.5 L644.172,135.5 L644.172,128.5 "
-                     id="path909" />
+                     d="M594.172,135.5 L597.672,128.5 L601.172,135.5 L594.172,135.5 "
+                     id="path1754" />
                 </g>
               </g>
               <g
@@ -4114,12 +3847,12 @@
                      stroke-width="1"
                      stroke-linecap="square"
                      stroke-linejoin="bevel"
-                     transform="matrix(1,0,0,1,662.672,122)"
+                     transform="matrix(1,0,0,1,612.672,122)"
                      font-family=".AppleSystemUIFont"
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g916">
+                     id="g1761">
                     <text
                        fill="#000000"
                        fill-opacity="1"
@@ -4131,7 +3864,7 @@
                        font-size="12"
                        font-weight="400"
                        font-style="normal"
-                       id="text914">100 lines</text>
+                       id="text1759">10 lines</text>
                   </g>
                 </g>
               </g>
@@ -4145,7 +3878,7 @@
                  id="ItemSample_12">
                 <g
                    fill="none"
-                   stroke="#41a7dc"
+                   stroke="#b65fd3"
                    stroke-opacity="1"
                    stroke-dasharray="8,4"
                    stroke-dashoffset="0"
@@ -4156,12 +3889,12 @@
                    font-size="13"
                    font-weight="400"
                    font-style="normal"
-                   id="g922">
+                   id="g1767">
                   <polyline
                      fill="none"
                      vector-effect="non-scaling-stroke"
-                     points="637.672,156.0 657.672,156.0"
-                     id="polyline920" />
+                     points="587.672,156.0 607.672,156.0"
+                     id="polyline1765" />
                 </g>
               </g>
               <g
@@ -4187,12 +3920,12 @@
                      stroke-width="1"
                      stroke-linecap="square"
                      stroke-linejoin="bevel"
-                     transform="matrix(1,0,0,1,662.672,145)"
+                     transform="matrix(1,0,0,1,612.672,145)"
                      font-family=".AppleSystemUIFont"
                      font-size="13"
                      font-weight="400"
                      font-style="normal"
-                     id="g927">
+                     id="g1772">
                     <text
                        fill="#000000"
                        fill-opacity="1"
@@ -4204,7 +3937,7 @@
                        font-size="12"
                        font-weight="400"
                        font-style="normal"
-                       id="text925">(down-sampled)</text>
+                       id="text1770">(down-sampled)</text>
                   </g>
                 </g>
               </g>
@@ -4220,19 +3953,19 @@
               <g
                  fill="none"
                  stroke="none"
-                 transform="matrix(1,0,0,1,442.2,13)"
+                 transform="matrix(1,0,0,1,415.966,13)"
                  font-family=".AppleSystemUIFont"
                  font-size="13"
                  font-weight="400"
                  font-style="normal"
-                 id="g934">
+                 id="g1779">
                 <rect
                    vector-effect="non-scaling-stroke"
                    x="0"
                    y="0"
-                   width="344.8"
-                   height="534.8"
-                   id="rect932" />
+                   width="321.034"
+                   height="484.8"
+                   id="rect1777" />
               </g>
             </g>
           </g>
@@ -4249,19 +3982,19 @@
         <g
            fill="none"
            stroke="none"
-           transform="matrix(1,0,0,1,0,0)"
            font-family=".AppleSystemUIFont"
            font-size="13"
            font-weight="400"
            font-style="normal"
-           id="g943">
+           id="g1788"
+           transform="matrix(1,0,0,1,0,0)">
           <rect
              vector-effect="non-scaling-stroke"
              x="0"
              y="0"
              width="0"
              height="0"
-             id="rect941" />
+             id="rect1786" />
         </g>
       </g>
       <g
@@ -4275,19 +4008,19 @@
         <g
            fill="none"
            stroke="none"
-           transform="matrix(1,0,0,1,0,0)"
            font-family=".AppleSystemUIFont"
            font-size="13"
            font-weight="400"
            font-style="normal"
-           id="g948">
+           id="g1793"
+           transform="matrix(1,0,0,1,0,0)">
           <rect
              vector-effect="non-scaling-stroke"
              x="0"
              y="0"
              width="0"
              height="0"
-             id="rect946" />
+             id="rect1791" />
         </g>
       </g>
     </g>

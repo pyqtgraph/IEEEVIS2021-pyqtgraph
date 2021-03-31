@@ -34,13 +34,15 @@ oneLineSubSampleData = np.array([2.26, 2.9, 6.81, 43.38, 383.15, 4042.9])
 tenLineSubSampleData = np.array([5.17, 6.76, 26.49, 212.87, 2085.96])
 hundredLineSubSampleData = np.array([23.16, 37.46, 209.97, 1811.96])
 
-win = pg.GraphicsLayoutWidget(size=(800, 600))
+win = pg.GraphicsLayoutWidget(size=(750, 550))
 
 pointsPerCurve = win.addPlot(row=0, col=0)
 updateTimePerPoint = win.addPlot(row=0, col=1)
+win.ci.layout.setColumnFixedWidth(0, 325)
+win.ci.layout.setSpacing(25)
+
 
 pointsPerCurve.axes["bottom"]["item"].enableAutoSIPrefix(False)
-# pointsPerCurve.showGrid(x=True, y=True)
 
 legend = pointsPerCurve.addLegend(offset=(5, 5), brush="w", pen="k")
 legend.setLabelTextSize(legendFontSize)
@@ -149,14 +151,13 @@ pointsPerCurve.addLine(
 
 pointsPerCurve.setLogMode(x=True, y=True)
 
-updateTimePerPoint.axes["bottom"]["item"].enableAutoSIPrefix(False)
-updateTimePerPoint.axes["left"]["item"].enableAutoSIPrefix(False)
+#####
 
 legend = updateTimePerPoint.addLegend(offset=(-10, 5), brush="w", pen="k")
 legend.setLabelTextSize(legendFontSize)
+
 updateTimePerPoint.setLabel("left", "Update Time per Point (µs)")
 updateTimePerPoint.setLabel("bottom", "Total Points")
-updateTimePerPoint.showGrid(x=True, y=True)
 
 totalPointsOneLine = x.copy()
 totalPointsTenLine = x[:-1] * 10
@@ -170,19 +171,31 @@ perPointUpdateSubSampleDurationOneLine = 1_000 * oneLineSubSampleData / totalPoi
 perPointUpdateSubSampleDurationsTenLines = 1_000 * tenLineSubSampleData / totalPointsTenLine
 perPointUpdateSubSampleDurationsHundredLines = 1_000 * hundredLineSubSampleData / totalPointsHundredLine
 
-updateTimePerPoint.addLine(
-    y=log10(200 / 1_000),
+
+
+updateTimePerPoint.plot(
+    x=totalPointsHundredLine,
+    y=perPointUpdateDurationsHundredLines,
     pen={
-        "color": "k",
-        "width": penWidth - 2,
+        "color": hundredLinePenColor,
+        "width": penWidth
+    },
+    symbol=hundredLineSymbol,
+    symbolPen="k",
+    symbolSize=symbolSize,
+    symbolBrush=hundredLinePenColor,
+    name="100 lines"
+)
+
+updateTimePerPoint.plot(
+    x=totalPointsHundredLine,
+    y=perPointUpdateSubSampleDurationsHundredLines,
+    pen={
+        "color": hundredLinePenColor,
+        "width": penWidth - 1,
         "style": QtCore.Qt.DashLine
     },
-    label="200 ns",
-    labelOpts={
-        "position":0.0,
-        "color":"#212121",
-        "anchors": [(0.0, 0.0), (0.0, 1.0)]
-    }
+    name="(down-sampled)",
 )
 
 updateTimePerPoint.plot(
@@ -235,38 +248,25 @@ updateTimePerPoint.plot(
     name="(down-sampled)",
 )
 
-updateTimePerPoint.plot(
-    x=totalPointsHundredLine,
-    y=perPointUpdateDurationsHundredLines,
-    pen={
-        "color": hundredLinePenColor,
-        "width": penWidth
-    },
-    symbol=hundredLineSymbol,
-    symbolPen="k",
-    symbolSize=symbolSize,
-    symbolBrush=hundredLinePenColor,
-    name="100 lines"
-)
 
-updateTimePerPoint.plot(
-    x=totalPointsHundredLine,
-    y=perPointUpdateSubSampleDurationsHundredLines,
+updateTimePerPoint.setLogMode(x=True, y=True)
+updateTimePerPoint.addLine(
+    y=log10(200 / 1_000),
     pen={
-        "color": hundredLinePenColor,
-        "width": penWidth - 1,
+        "color": "k",
+        "width": penWidth - 2,
         "style": QtCore.Qt.DashLine
     },
-    name="(down-sampled)",
+    label="200 ns",
+    labelOpts={
+        "position":0.0,
+        "color":"#212121",
+        "anchors": [(0.0, 0.0), (0.0, 1.0)]
+    }
 )
-updateTimePerPoint.setLogMode(x=True, y=True)
 
-# axesWidths = updateTimePerPoint.axes["left"]["item"].width() + pointsPerCurve.axes["left"]["item"].width()
-# combinedPlotWidth = win.width() - axesWidths
-# firstPlotWidth = combinedPlotWidth // 2 + pointsPerCurve.axes["left"]["item"].width()
+updateTimePerPoint.showGrid(x=True, y=True)
 
-win.ci.layout.setColumnFixedWidth(0, 350)
-win.ci.layout.setSpacing(25)
 win.show()
 
 if __name__ == '__main__':
