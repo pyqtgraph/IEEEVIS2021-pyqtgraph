@@ -158,6 +158,7 @@ legend.setLabelTextSize(legendFontSize)
 
 updateTimePerPoint.setLabel("left", "Update Time per Point (µs)")
 updateTimePerPoint.setLabel("bottom", "Total Points")
+updateTimePerPoint.axes["bottom"]["item"].enableAutoSIPrefix(False)
 
 totalPointsOneLine = x.copy()
 totalPointsTenLine = x[:-1] * 10
