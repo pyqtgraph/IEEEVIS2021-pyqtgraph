@@ -22,7 +22,7 @@
 \begin{figure}[!htbp]
 \centering
 \includegraphics[width=\columnwidth]{figures/pg_ptree_ex}
-\caption{Sample use case of parameter trees for function interaction, where various image processing parameters can be quickly updated. Of note, the displayed image reflects these changes in real-time.}
+\caption{Sample use of parameter trees for user interaction, where various image processing parameters can be quickly updated. The displayed image reflects these changes in real-time.}
  \label{fig:ptreeEx}
 \end{figure}}
 
@@ -56,8 +56,7 @@
  \newcommand{\makeARBBenchmarkFig}{
  \begin{figure}[tbh]
  \centering
-%  \includegraphics[width=\columnwidth]{figures/makeARGB_benchmark.pdf}
- \includegraphics[width=\columnwidth]{figures/cuda_acceleration_dummy}
+ \includegraphics[width=\columnwidth]{figures/makeARGB_benchmark.pdf}
  \caption{Image speed benchmark.\color{DarkOrchid}The time to render a single image  frame is shown for different data formats. Left: Using optimized NumPy processing (dashed lines), the drawing time is linear in the number of pixels over a wide range. It varies by less than a factor of two with the choice of applied scaling and LUT (colors and shaded interval). Solid lines show measurement results when using GPU accelerated CUDA processing. The need to copy data to and from the GPU creates additional overhead in this case, but for images of more than 300,000 pixels, this is compensated by faster processing speed. Right: For original data in uint8 format, CUDA procesing is particularly advantageous and can provide an almost four-fold reduction in drawing time. Benchmarks were performed on an Intel i5-7300HQ processor at 2.50 GHz and an NVIDIA 1050 GTX discrete GPU. \color{brown}  Time to render 1 image frame, test conditions involved CUDA enabled and disabled, Lookup Table enabled and disabled, and uint8 and uint16 dtypes.  Test results for uint8 and uint16 showed minimal difference, and thus only uint16 data is displayed.  Benchmarks were run on a Dell XPS 15 95060 with an Intel i5-7300HQ @ 2.50 GHz processor and a NVIDIA 1050 GTX discrete GPU.}
  \label{fig:makeARGB}
  \end{figure}

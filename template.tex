@@ -251,9 +251,9 @@ A common image analysis task is to define a ROI in a larger original image. This
 
 \subsubsection{Performance}
 
-Numerous factors play into the final performance of a video stream. Data type conversions, LUTs, scaling, and any custom pre-processing all need to occur for each frame, and the computational effort typically scales with image size. A minimum of 20 FPS is generally required for a usable interactive video stream, although 60 FPS is preferred in many applications. Some share of the image processing is by necessity done in the primary event thread of the Qt application, as Qt requires full access to the memory that contains the data that is to be displayed. Being careful to observe that concern, a multi-threaded approach can improve performance. For example, larger images can be downsampled before processing to reduce the workload of the main thread. The rest of the application should also make sparing use of the main thread for any tasks not strictly tied to updating the user interface.
+Numerous factors play into the final performance of a video stream. Data type conversions, LUTs, scaling, and any custom pre-processing all need to occur for each frame, and the computational effort typically scales with image size. A minimum of 20 FPS is generally required for a usable interactive video stream, although 60 FPS is preferred in many applications. \color{red} Some share of the image processing is by necessity done in the primary event thread of the Qt application, as Qt requires full access to the memory that contains the data that is to be displayed. Being careful to observe that concern, a multi-threaded approach can improve performance. For example, larger images can be downsampled before processing to reduce the workload of the main thread. The rest of the application should also make sparing use of the main thread for any tasks not strictly tied to updating the user interface.
 
-After being configured, \texttt{ImageItem} uses \texttt{makeARGB} to perform its core image processing steps. This function performs the NumPy operations to rescale, apply a LUT and convert the data type to be in proper \texttt{QImage} format. Depending on the configuration and data, rescaling can itself be implemented as a LUT, or modification thereof. In some cases, \texttt{QImage} will have built-in methods to convert the data, and these are used when possible.
+After being configured, \texttt{ImageItem} uses \texttt{makeARGB} to perform its core image processing steps. This function performs the NumPy operations to rescale, apply a LUT and convert the data type to be in proper \texttt{QImage} format. Depending on the configuration and data, rescaling can itself be implemented as a LUT, or modification thereof. In some cases, \texttt{QImage} will have built-in methods to convert the data, and these are used when possible. \color{black}
 
 \color{DarkOrchid}
 When integrated as a widget in a Qt application (\autoref{fig:mpl}), we typically find \texttt{ImageItem} to display an image 75--150 times faster than the \texttt{FigureCanvas} provided by Matplotlib, a plotting library that emphasizes graphical quality over speed.
@@ -294,20 +294,28 @@ Multiple use cases for these Parameter trees are highlighted in \autoref{sec:exa
 
 \subsection{Rapid iteration of processing parameters}
 
+\color{DarkOrchid}
 \autoref{fig:ptreeEx} shows such a parameter tree in use. 
-In applications such as image processing, immediate feedback for various algorithmic parameters can be critical in reducing the exploration space of viable solutions. For instance, it might be difficult to tell the appropriate kernel size for a morphological operation without testing multiple combinations of image types, parameter values, and more. These factors often make fine-tuning a laborious process. In these cases, Parameter trees can interact with callbacks as described in \autoref{sec:paramtrees} to directly integrate the programmer into the testing space. A simple example of this is shown in . For more complex image processing workflows, an optimal combination of multiple values can be determined on a trial basis, saved to a given configuration file, and loaded on demand depending on input image properties.
+In applications such as image processing, immediate feedback for a choice of algorithmic parameters can help to rapidly reduce the exploration space in the search for viable solutions. For instance, it might be difficult to tell the appropriate kernel size for a morphological operation without testing multiple combinations of image types, parameter values, and more. These factors often make fine-tuning a laborious process. Parameter trees assist in creating a tool to integrate the user with the testing space, quickly and without large amounts of boilerplate code. Using callbacks to provide immediate response, workable parameter combinations can be explored, and candidate solutions can be stored to configuration files, both for comparison to alternative approaches and for application to specific data types.
 \makePtreeExFig
 
-
 \subsection{Model Prototyping}
+\color{DarkOrchid}
+The supplementary information contains a similar application of PyQtGraph's capabilities to a machine learning model. Here the parameter trees allows tuning aspects of the input data, model structure and output formats. The plotting functions provide live feedback for how these changes affect application accuracy, greatly assisting a rapid prototyping process.
+% \autoref{fig:neuralNetFig}.
+
+\color{brown}
 Machine learning is one domain in which users can tune some aspects of the input data, model structure, and output formats. In these cases, live feedback for how these changes affect application accuracy can greatly assist the rapid prototyping process. PyQtGraph can facilitate such developments by converting such specifications into tunable knobs. In turn, these updates can be reflected at application runtime -- drastically decreasing the `dead space` between development and visualization. Such a use case is demonstrated in \autoref{fig:neuralNetFig}.
 % \makeNeuralNetFig
 
-
+\color{Black}
 \subsection{Monitoring of real-time data}
 \makeMonitoringFig
 Visualization can provide immediate feedback on measurement results and the operational state of the equipment involved. \autoref{fig:monitoring} shows an application of the opportunities provided by PyQtGraph's interactive facilities in this application. For most applications, no data reduction is necessary to maintain smooth display of a sufficiently large buffer, and no additional code is needed to alternate between monitoring of new data and close inspection of specific events.
 
+\color{DarkOrchid}
+\subsection{Additional examples}
+The supplementary information includes video demonstrations of two additional applications that make heavy use of PyQtGraph functionality to explore spectral data and to visualize volumetric data representing the 3d structure of multilayer circuit boards.
 
 \color{black}
 
@@ -315,26 +323,30 @@ Visualization can provide immediate feedback on measurement results and the oper
 PyQtGraph is released under the open source MIT license. It is known to run on systems ranging from the Raspberry Pi to IBM's s390x architecture. Development is coordinated by volunteer maintainers, with additional code provided by occasional contributors. A continuous integration system asserts that the codebase passes a suite of tests for different combinations of Qt bindings, Python versions and operating systems. PyQtGraph has adopted NEP-29\cite{NEP-29} to establish a support timeline for Python and NumPy versions in line with the rest of the Python community and development occurs in close communication with projects such as ACQ4\cite{10.3389/fninf.2014.00003} and Orange3\cite{JMLR:demsar13a} that constitute a large part of the user base.
 
 \section{Outlook}
-With a growing number of both maintainers and contributors, PyQtGraph is well positioned to take advantage of technological developments. The support of hardware acceleration in recent versions of NumPy has already been used to add CUDA integration to some time-critical code, but there is still plenty of potential for further improvements to performance and capabilities. Multithread architecture patterns can be better applied to internal library objects and functions. These multithread patterns can be written about more in tutorials and documentation, to encourage performant application design. The growing maturity of the Numba just-in-time compiler \cite{lam2015numba} for Python code provides additional opportunities for acceleration beyond what NumPy's array operations can provide.
+With a growing number of both maintainers and contributors, PyQtGraph is well positioned to take advantage of technological developments. The support of hardware acceleration in recent versions of NumPy has already been used to add CUDA integration to some time-critical code, but there is still plenty of potential for further improvements to performance and capabilities. \color{DarkOrchid} Increased use of multi-threaded patterns is a goal in this respect, both throughout the library, and in user code supported by appropriate documentation, examples and API design. The growing maturity of the Numba just-in-time compiler \cite{lam2015numba} for Python code provides additional opportunities for acceleration beyond what NumPy's array operations can provide.
+
+\color{brown}
+Multithread architecture patterns can be better applied to internal library objects and functions. These multithread patterns can be written about more in tutorials and documentation, to encourage performant application design. The growing maturity of the Numba just-in-time compiler \cite{lam2015numba} for Python code provides additional opportunities for acceleration beyond what NumPy's array operations can provide.
 
 %% if specified like this the section will be committed in review mode
+\color{red}
 \acknowledgments{
 The authors wish to thank A, B, and C. This work was supported in part by
 a grant from XYZ (\# 12345-67890).}
-
+\color{black}
 
 \section{Appendix}
+\textfraction 0.05
 
-\begin{table*}[bth]
-\inputminted[
-fontsize=\footnotesize, 
-baselinestretch=0.9,
-frame=lines,
-framesep=2mm
-]{python}{figures/arrayToQPath_condensed.py}
+%-----------------------------------------------------
+\begin{table*}[tp]
+\inputminted[ fontsize=0.5\footnotesize, baselinestretch=0.5, frame=lines, framesep=2mm ]{python}{figures/arrayToQPath_condensed.py}
 \caption{PyQtGraph source code for the core \texttt{arrayToQPath} function.}
 \label{table:arrayToQPath}
 \end{table*}
+%-----------------------------------------------------
+
+
 
 \subsection{Implementation of arrayToQPath}
 \label{app_arrayToQPath}
@@ -353,6 +365,7 @@ framesep=2mm
 \label{table:makeARGB}
 \end{table*}
 
+
 \subsection{Implementation of makeARGB}
 \label{app_makeARGB}
 
@@ -364,7 +377,8 @@ Two CuPy-related if-statements can be seen, each working around a way in which t
 
 
 % Prevents code table from floating to the end of the text. According to submission rules, last two pages are references only.
-\FloatBarrier
+%\FloatBarrier
+
 %\bibliographystyle{abbrv}
 \bibliographystyle{abbrv-doi}
 %\bibliographystyle{abbrv-doi-narrow}
